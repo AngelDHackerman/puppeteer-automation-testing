@@ -29,32 +29,48 @@ This project uses several dependencies:
 - [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot): A Jest matcher for image comparisons. Most commonly used for visual regression testing.
 - [@axe-core/puppeteer](https://github.com/dequelabs/axe-core-npm/tree/develop/packages/puppeteer): Provides a chainable aXe API for Puppeteer and automatically injects into all frames.
 
-Please make sure to install these dependencies by running `npm install puppeteer jest prettier jest-image-snapshot @axe-core/puppeteer`.
+Please make sure to install these dependencies by running 
+```
+npm init
+npm i puppeteer jest 
+npm i -D prettier 
+npm i jest-image-snapshot 
+npm i @axe-core/puppeteer
+```
 
 
 ## Usage
 
-To run a script, navigate to the project directory in your terminal and run `node <script-name.js>`. For example, to run the Google tests script, you would run `node google-tests.js`.
+To run a script, navigate to the project directory in your terminal and run `npm run <script-name.test.js>`. For example, to run the Google tests script, you would run `npm run google-tests.test.js`.
 
 ## Scripts
 
-### google-tests.js
-
-This script performs a series of tests on Google.com. The tests include...
-
-### coinmarketcap-tests.js
-
-This script performs a series of tests on Coinmarketcap.com. The tests include...
-
-### kayak-tests.js
-
-This script performs a series of tests on Kayak.com. The tests include...
-
-### demoQA-tests.js
+### DemoQA Tests
 
 This script performs a series of tests on DemoQA.com. The tests include...
 
+### Madison Island Store Tests
+
+This script performs a series of tests on http://demo-store.seleniumacademy.com/. The tests include...
+
+### Google Tests
+
+This script performs a series of tests on Google.com. The tests include...
+
+### Coinmarketcap Tests
+
+This script performs a series of tests on Coinmarketcap.com. The tests include...
+
+### Kayak Tests
+
+This script performs a series of tests on Kayak.com. The tests include...
+
+### Expanding Testing Tests
+
+This script performs a series of tests on https://practice.expandtesting.com/. The tests include...
+
 (Continue with the description of the other scripts...)
+
 
 ## Contributions
 
