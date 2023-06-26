@@ -1,18 +1,19 @@
 # Puppeteer Automation Testing
 
 We will use differente web pages in order to do our testing, below you'll find the links to the Notion pages, each links contains the __test cases__, __purpuse of the testing__, __steps to follow__, __validation document (screen shots of the testing)__, and the manual test for each case. 
+In order to see the the full details of each page tested, click on the link below. Or if you want to see the code used for the automation test, click on the directory that has the name of the page you want to check. 
 
 [DemoQa](https://www.notion.so/DemoQa-d5ad9dee0d504c7b94020725b28a80f7?pvs=21)
 
 [Madison Demo-store](https://www.notion.so/Madison-Demo-store-24706e51f4784165956dec4ceb31c5b0?pvs=21)
 
-[practice-expandin-testing](https://www.notion.so/practice-expandin-testing-db4d5d9a96534e24b586defae09383d9?pvs=21)
+[Practice Expanding-testing](https://www.notion.so/practice-expandin-testing-db4d5d9a96534e24b586defae09383d9?pvs=21)
 
-[google](https://www.notion.so/google-4390ab6abadd4648be1a064cfce56ec4?pvs=21)
+[Google](https://www.notion.so/google-4390ab6abadd4648be1a064cfce56ec4?pvs=21)
 
-[coinmarketcap](https://www.notion.so/coinmarketcap-ce38278df10a49d7b96e76a4b98ad455?pvs=21)
+[Coinmarketcap](https://www.notion.so/coinmarketcap-ce38278df10a49d7b96e76a4b98ad455?pvs=21)
 
-[kayak](https://www.notion.so/kayak-4e27d130fdbf47dc90eb6032524ee991?pvs=21)
+[Kayak](https://www.notion.so/kayak-4e27d130fdbf47dc90eb6032524ee991?pvs=21)
 
 ## Tests
 
@@ -50,7 +51,7 @@ To run a script, navigate to the project directory in your terminal and run `npm
 
 ### DemoQA Tests
 
-This script performs a series of tests on http://DemoQA.com. The tests include...
+This script performs a series of tests on http://DemoQA.com. 
 
 ### Madison Island Store Tests
 
