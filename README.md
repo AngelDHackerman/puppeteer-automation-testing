@@ -2,17 +2,17 @@
 
 We will use this web pages for the testing
 
-[D[emoQa](https://demoqa.com/elements)](https://www.notion.so/DemoQa-d5ad9dee0d504c7b94020725b28a80f7?pvs=21)
+[DemoQa](https://www.notion.so/DemoQa-d5ad9dee0d504c7b94020725b28a80f7?pvs=21)
 
 [Madison Demo-store](https://www.notion.so/Madison-Demo-store-24706e51f4784165956dec4ceb31c5b0?pvs=21)
 
-[[practice-expandin-testing](https://practice.expandtesting.com/)](https://www.notion.so/practice-expandin-testing-db4d5d9a96534e24b586defae09383d9?pvs=21)
+[practice-expandin-testing](https://www.notion.so/practice-expandin-testing-db4d5d9a96534e24b586defae09383d9?pvs=21)
 
-[[google](https://www.google.com/)](https://www.notion.so/google-4390ab6abadd4648be1a064cfce56ec4?pvs=21)
+[google](https://www.notion.so/google-4390ab6abadd4648be1a064cfce56ec4?pvs=21)
 
-[[coinmarketcap](https://coinmarketcap.com/)](https://www.notion.so/coinmarketcap-ce38278df10a49d7b96e76a4b98ad455?pvs=21)
+[coinmarketcap](https://www.notion.so/coinmarketcap-ce38278df10a49d7b96e76a4b98ad455?pvs=21)
 
-[[kayak](https://www.kayak.com/)](https://www.notion.so/kayak-4e27d130fdbf47dc90eb6032524ee991?pvs=21)
+[kayak](https://www.notion.so/kayak-4e27d130fdbf47dc90eb6032524ee991?pvs=21)
 
 ## Tests
 
