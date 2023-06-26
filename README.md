@@ -1,7 +1,10 @@
 # Puppeteer Automation Testing
 
-We will use differente web pages in order to do our testing, below you'll find the links to the Notion pages, each links contains the __test cases__, __purpuse of the testing__, __steps to follow__, __validation document (screen shots of the testing)__, and the manual test for each case. 
-In order to see the the full details of each page tested, click on the link below. Or if you want to see the code used for the automation test, click on the directory that has the name of the page you want to check. 
+We will use differente web pages in order to do our testing, below you'll find the links to the Notion pages,
+each links contains the __test cases__, __purpuse of the testing__, __steps to follow__, __validation document (screen shots of the testing)__, and the manual test for each case.
+
+In order to see the the full details of each page tested, click on the links listed below.
+Or if you want to see the code used for the automation test, click on the directory that has the name of the page you want to check. 
 
 [DemoQa](https://www.notion.so/DemoQa-d5ad9dee0d504c7b94020725b28a80f7?pvs=21)
 
