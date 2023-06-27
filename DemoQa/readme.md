@@ -42,7 +42,8 @@
 <details>
   <summary><h2>Test Cases For The Elements Section</h2></summary>
 
-## Test Case 1: Text Box
+<details>
+  <summary><h2>Test Case 1: Text Box</h2></summary>
 
 **Test Objective:** Verify that the text box accepts user input and displays the results correctly.
 
@@ -59,8 +60,14 @@
 **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
 ****************************Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
+</details>
 
-## Test Case 2: Check Box
+
+
+
+
+<details>
+  <summary><h2> Test Case 2: Check Box</h2></summary>
 
 **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
 
@@ -75,8 +82,13 @@
 7. Collapse all directories by clicking on the toggle of the parent directories:  Desktop, Documents, Downloads and then collapse the directory Home.
 
 **Expected Outcome:** After clicking on a checkbox, it should be selected and the correct output should be displayed in the "Checked and unchecked" box. If the checkbox is clicked again, it should be unselected and the output should be updated accordingly.
+</details>
 
-## Test Case 3: Radio Button
+
+
+
+<details>
+  <summary><h2>Test Case 3: Radio Button</h2></summary>
 
 **Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
 
@@ -91,10 +103,15 @@
 7. Verify that the correct output is displayed below the radio buttons.
 
 **Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
+</details>
 
-## Test Case 4: Web Tables
 
-**Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
+
+
+<details>
+  <summary><h2>Test Case 4: Web Tables</h2></summary>
+
+  **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
 **Steps to Follow (Manual Testing):**
 
@@ -106,8 +123,13 @@
 6. In the input “type to search” type “Angel” and the new row created has to be displayed, make sure the first column if for “Angel Hackerman” 
 
 **Expected Outcome:** The table should display the correct data and the buttons in the "Action" column should function as expected. If there is an "Add" button, it should allow you to add a new row to the table, also we should be able to delete and edit the columns of the table. 
+</details>
 
-## Test Case 5: Buttons
+
+
+
+<details>
+  <summary><h2>Test Case 5: Buttons</h2></summary>
 
 **Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
 
@@ -119,8 +141,13 @@
 4. Click on the "Click Me" button and verify that the correct message is displayed.
 
 **Expected Outcome:** After interacting with each button, the correct message should be displayed below the button. The "Double Click Me" button should display a message about a double click, the "Right Click Me" button should display a message about a right click, and the "Click Me" button should display a message about a click.
+</details>
 
-## Test Case 6: Links
+
+
+
+<details>
+  <summary><h2>## Test Case 6: Links</h2></summary>
 
 **Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
 
@@ -132,6 +159,7 @@
 4. Repeat for the other links ("No Content", "Moved", "Bad Request", "Unauthorized", "Forbidden", "Not Found").
 
 **Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
+</details>
 
 </details>
 
