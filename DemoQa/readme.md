@@ -42,124 +42,152 @@
 <details>
   <summary><h2>Test Cases For The Elements Section</h2></summary>
 
-<details>
-  <summary><h3>Test Case 1: Text Box</h3></summary>
+  <details>
+    <summary><h3>Test Case 1: Text Box</h3></summary>
 
-**Test Objective:** Verify that the text box accepts user input and displays the results correctly.
+  **Test Objective:** Verify that the text box accepts user input and displays the results correctly.
 
-**Steps to Follow (Manual Testing):**
+  **Steps to Follow (Manual Testing):**
 
-1. Open the webpage **[https://demoqa.com/text-box](https://demoqa.com/text-box)** in a browser.
-2. Enter a name into the "Full Name" field.
-3. Enter an email into the "Email" field.
-4. Enter an address into the "Current Address" field.
-5. Enter another address into the "Permanent Address" field.
-6. Click the "Submit" button.
-7. Verify that the results are displayed correctly under "Output".
+  1. Open the webpage **[https://demoqa.com/text-box](https://demoqa.com/text-box)** in a browser.
+  2. Enter a name into the "Full Name" field.
+  3. Enter an email into the "Email" field.
+  4. Enter an address into the "Current Address" field.
+  5. Enter another address into the "Permanent Address" field.
+  6. Click the "Submit" button.
+  7. Verify that the results are displayed correctly under "Output".
 
-**Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
+  **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
-****************************Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
+  ****************************Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
+  </details>
+
+
+
+
+
+  <details>
+    <summary><h3> Test Case 2: Check Box</h3></summary>
+
+  **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
+
+  **Steps to Follow (Manual Testing):**
+
+  1. Open the webpage **[https://demoqa.com/checkbox](https://demoqa.com/checkbox)** in a browser.
+  2. Click on the toggle on the left of the directory “Home”; Desktop, Documents, Downloads should be displayed now. 
+  3. Click on the left toggles of each of those new directories, under Documents 2 new directories should be shown now: WorkSpace & Office. 
+  4. Click on the left toggle of those directories: WorkSpace & Office. 
+  5. Now select one by one the files: Notes, Commands, React, Angular, Veu, Public, Private, Classified, General, Word File.doc and Excel File.doc. All check box should be marked now **(CREATE A VALIDATION FOR THE “you have selected” SECTION)**. 
+  6. Now unselect all the files by clicking on the check box of the parent directory “Home”, now all files should be unselected. 
+  7. Collapse all directories by clicking on the toggle of the parent directories:  Desktop, Documents, Downloads and then collapse the directory Home.
+
+  **Expected Outcome:** After clicking on a checkbox, it should be selected and the correct output should be displayed in the "Checked and unchecked" box. If the checkbox is clicked again, it should be unselected and the output should be updated accordingly.
+  </details>
+
+
+
+
+  <details>
+    <summary><h3>Test Case 3: Radio Button</h3></summary>
+
+  **Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
+
+  **Steps to Follow (Manual Testing):**
+
+  1. Open the webpage **[https://demoqa.com/radio-button](https://demoqa.com/radio-button)** in a browser.
+  2. Click on a radio button “yes”.
+  3. Verify that the radio button is selected.
+  4. Verify that the correct output is displayed below the radio buttons.
+  5. Click on a radio button “Impressive”.
+  6. Verify that the radio button is selected.
+  7. Verify that the correct output is displayed below the radio buttons.
+
+  **Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
+  </details>
+
+
+
+
+  <details>
+    <summary><h3>Test Case 4: Web Tables</h3></summary>
+
+    **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
+
+  **Steps to Follow (Manual Testing):**
+
+  1. Open the webpage **[https://demoqa.com/webtables](https://demoqa.com/webtables)** in a browser.
+  2. Verify that the table is displayed with the correct data.
+  3. Click on the button “Delete” in the "Action" column for the first row (Cierra Vega) and verify that the row is removed. 
+  4. Click on the button “Edit” in the "Action" column for the new first row (Kierra Gentry) and change the name to “Katrina” and her age is now “19”, click on submit button. Name has to be changed now to katrina with 19 years old
+  5. Click on the “Add” button, fill out the first and last name with “Angel Hackerman”, email: angelhackerman@test.com, Age 27, salary 4000, department IT. Click on submit. A new row has to be created 
+  6. In the input “type to search” type “Angel” and the new row created has to be displayed, make sure the first column if for “Angel Hackerman” 
+
+  **Expected Outcome:** The table should display the correct data and the buttons in the "Action" column should function as expected. If there is an "Add" button, it should allow you to add a new row to the table, also we should be able to delete and edit the columns of the table. 
+  </details>
+
+
+
+
+  <details>
+    <summary><h3>Test Case 5: Buttons</h3></summary>
+
+  **Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
+
+  **Steps to Follow (Manual Testing):**
+
+  1. Open the webpage **[https://demoqa.com/buttons](https://demoqa.com/buttons)** in a browser.
+  2. Double click on the "Double Click Me" button and verify that the correct message is displayed.
+  3. Right click on the "Right Click Me" button and verify that the correct message is displayed.
+  4. Click on the "Click Me" button and verify that the correct message is displayed.
+
+  **Expected Outcome:** After interacting with each button, the correct message should be displayed below the button. The "Double Click Me" button should display a message about a double click, the "Right Click Me" button should display a message about a right click, and the "Click Me" button should display a message about a click.
+  </details>
+
+
+
+
+  <details>
+    <summary><h3>Test Case 6: Links</h3></summary>
+
+  **Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
+
+  **Steps to Follow (Manual Testing):**
+
+  1. Open the webpage **[https://demoqa.com/links](https://demoqa.com/links)** in a browser.
+  2. Click on “Home” and “HomeS9OAn” both should open a new tab and show you the home page. 
+  3. Click on the "Created" link and verify that the correct API status is displayed.
+  4. Repeat for the other links ("No Content", "Moved", "Bad Request", "Unauthorized", "Forbidden", "Not Found").
+
+  **Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
+  </details>
+
 </details>
 
 
 
-
-
 <details>
-  <summary><h3> Test Case 2: Check Box</h3></summary>
+  <summary><h2>Test Cases For The Form Section</h2></summary> 
 
-**Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
+ <h3>Test Case 7: Automation Practice Form</h3>
+
+**Test Objective:** Verify that the form on the page can be filled out correctly and that the correct output is displayed when the form is submitted.
 
 **Steps to Follow (Manual Testing):**
 
-1. Open the webpage **[https://demoqa.com/checkbox](https://demoqa.com/checkbox)** in a browser.
-2. Click on the toggle on the left of the directory “Home”; Desktop, Documents, Downloads should be displayed now. 
-3. Click on the left toggles of each of those new directories, under Documents 2 new directories should be shown now: WorkSpace & Office. 
-4. Click on the left toggle of those directories: WorkSpace & Office. 
-5. Now select one by one the files: Notes, Commands, React, Angular, Veu, Public, Private, Classified, General, Word File.doc and Excel File.doc. All check box should be marked now **(CREATE A VALIDATION FOR THE “you have selected” SECTION)**. 
-6. Now unselect all the files by clicking on the check box of the parent directory “Home”, now all files should be unselected. 
-7. Collapse all directories by clicking on the toggle of the parent directories:  Desktop, Documents, Downloads and then collapse the directory Home.
+1. Open the webpage **https://demoqa.com/automation-practice-form** in a browser.
+2. Enter a first name into the "First Name" field.
+3. Enter a last name into the "Last Name" field.
+4. Enter an email into the "Email" field.
+5. Select a gender.
+6. Enter a mobile number into the "Mobile Number" field.
+7. Enter a subject into the "Subjects" field.
+8. Select a hobby.
+9. Enter an address into the "Current Address" field.
+10. Select a state from the "State" dropdown.
+11. Select a city from the "City" dropdown.
+12. Click the "Submit" button.
+13. Verify that the correct output is displayed.
 
-**Expected Outcome:** After clicking on a checkbox, it should be selected and the correct output should be displayed in the "Checked and unchecked" box. If the checkbox is clicked again, it should be unselected and the output should be updated accordingly.
-</details>
-
-
-
-
-<details>
-  <summary><h3>Test Case 3: Radio Button</h3></summary>
-
-**Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
-
-**Steps to Follow (Manual Testing):**
-
-1. Open the webpage **[https://demoqa.com/radio-button](https://demoqa.com/radio-button)** in a browser.
-2. Click on a radio button “yes”.
-3. Verify that the radio button is selected.
-4. Verify that the correct output is displayed below the radio buttons.
-5. Click on a radio button “Impressive”.
-6. Verify that the radio button is selected.
-7. Verify that the correct output is displayed below the radio buttons.
-
-**Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
-</details>
-
-
-
-
-<details>
-  <summary><h3>Test Case 4: Web Tables</h3></summary>
-
-  **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
-
-**Steps to Follow (Manual Testing):**
-
-1. Open the webpage **[https://demoqa.com/webtables](https://demoqa.com/webtables)** in a browser.
-2. Verify that the table is displayed with the correct data.
-3. Click on the button “Delete” in the "Action" column for the first row (Cierra Vega) and verify that the row is removed. 
-4. Click on the button “Edit” in the "Action" column for the new first row (Kierra Gentry) and change the name to “Katrina” and her age is now “19”, click on submit button. Name has to be changed now to katrina with 19 years old
-5. Click on the “Add” button, fill out the first and last name with “Angel Hackerman”, email: angelhackerman@test.com, Age 27, salary 4000, department IT. Click on submit. A new row has to be created 
-6. In the input “type to search” type “Angel” and the new row created has to be displayed, make sure the first column if for “Angel Hackerman” 
-
-**Expected Outcome:** The table should display the correct data and the buttons in the "Action" column should function as expected. If there is an "Add" button, it should allow you to add a new row to the table, also we should be able to delete and edit the columns of the table. 
-</details>
-
-
-
-
-<details>
-  <summary><h3>Test Case 5: Buttons</h3></summary>
-
-**Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
-
-**Steps to Follow (Manual Testing):**
-
-1. Open the webpage **[https://demoqa.com/buttons](https://demoqa.com/buttons)** in a browser.
-2. Double click on the "Double Click Me" button and verify that the correct message is displayed.
-3. Right click on the "Right Click Me" button and verify that the correct message is displayed.
-4. Click on the "Click Me" button and verify that the correct message is displayed.
-
-**Expected Outcome:** After interacting with each button, the correct message should be displayed below the button. The "Double Click Me" button should display a message about a double click, the "Right Click Me" button should display a message about a right click, and the "Click Me" button should display a message about a click.
-</details>
-
-
-
-
-<details>
-  <summary><h3>## Test Case 6: Links</h3></summary>
-
-**Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
-
-**Steps to Follow (Manual Testing):**
-
-1. Open the webpage **[https://demoqa.com/links](https://demoqa.com/links)** in a browser.
-2. Click on “Home” and “HomeS9OAn” both should open a new tab and show you the home page. 
-3. Click on the "Created" link and verify that the correct API status is displayed.
-4. Repeat for the other links ("No Content", "Moved", "Bad Request", "Unauthorized", "Forbidden", "Not Found").
-
-**Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
-</details>
-
+**Expected Outcome:** After filling out the form and clicking "Submit", the correct output should be displayed. This output should match the data you entered into the form fields.
 </details>
 
