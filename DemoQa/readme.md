@@ -5,7 +5,7 @@
 
 
 <details>
-  <summary><h3>Test Plan for DemoQA</h3></summary>
+  <summary><h2>Test Plan for DemoQA</h2></summary>
 
   **Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
 
@@ -40,7 +40,7 @@
 </details>
 
 <details>
-  <summary><h3>Test Cases For The Elements Section</h3></summary>
+  <summary><h2>Test Cases For The Elements Section</h2></summary>
 
 <details>
   <summary><h3>Test Case 1: Text Box</h3></summary>
