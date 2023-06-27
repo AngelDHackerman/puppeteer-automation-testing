@@ -191,3 +191,64 @@
 **Expected Outcome:** After filling out the form and clicking "Submit", the correct output should be displayed. This output should match the data you entered into the form fields.
 </details>
 
+
+<details>
+  <summary><h2>Test Cases For The Form Section</h2></summary>
+  <h3>Test Case 7: Automation Practice Form</h3>
+
+**Test Objective:** Verify that the form on the page can be filled out correctly and that the correct output is displayed when the form is submitted.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage **https://demoqa.com/automation-practice-form** in a browser.
+2. Enter a first name into the "First Name" field.
+3. Enter a last name into the "Last Name" field.
+4. Enter an email into the "Email" field.
+5. Select a gender.
+6. Enter a mobile number into the "Mobile Number" field.
+7. Enter a subject into the "Subjects" field.
+8. Select a hobby.
+9. Enter an address into the "Current Address" field.
+10. Select a state from the "State" dropdown.
+11. Select a city from the "City" dropdown.
+12. Click the "Submit" button.
+13. Verify that the correct output is displayed.
+
+**Expected Outcome:** After filling out the form and clicking "Submit", the correct output should be displayed. This output should match the data you entered into the form fields.
+
+</details>
+
+
+<details>
+<summary><h2>Test Cases For: Alerts, Frame & Windows</h2></summary>
+  <details>
+    <summary><h3>Test Case 8: Browser Windows</h3></summary>
+    **Test Objective:** Verify that the buttons on the page open new browser windows or tabs as expected.
+
+    **Steps to Follow (Manual Testing):**
+
+    1. Open the webpage **https://demoqa.com/browser-windows** in a browser.
+    2. Click on the "New Tab" button and verify that a new tab opens.
+    3. Switch to the new tab and verify that it has the correct content.
+    4. Repeat for the "New Window" and "New Window Message" buttons.
+
+    **Expected Outcome:** After clicking on each button, a new browser window or tab should open with the correct content. The "New Tab" button should open a new tab, the "New Window" button should open a new window, and the "New Window Message" button should open a new window with a message.
+  </details>
+
+  <details>
+    <summary><h3>Test Case 9: Browser Alerts</h3></summary>
+    **Test Objective:** Verify that the buttons on the page trigger the correct browser alerts and that the alerts display the correct messages.
+
+    **Steps to Follow (Manual Testing):**
+
+    1. Open the webpage **https://demoqa.com/alerts** in a browser.
+    2. Click on the "Click me" button and verify that a browser alert appears.
+    3. Verify that the alert displays the correct message.
+    4. Dismiss the alert and verify that it closes correctly.
+    5. Repeat for the other buttons alerts like the **5 seconds alert**.
+    6. Click on the confirm box alert, once the alert is dismissed, make sure the confirmation message is shown.
+    7. Click on the prompt box alert and write “Angel Hackerman”, and make sure the confirmation message says: “You entered Angel Hackerman”.
+
+    **Expected Outcome:** After clicking on each button, a browser alert should appear with the correct message. The alert should be dismissable and should close correctly when dismissed.
+  </details>
+</details>
