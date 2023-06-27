@@ -5,7 +5,7 @@
 
 
 <details>
-  <summary><h2>Test Plan for DemoQA</h2></summary>
+  <summary><h3>Test Plan for DemoQA</h3></summary>
 
   **Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
 
@@ -40,10 +40,10 @@
 </details>
 
 <details>
-  <summary><h2>Test Cases For The Elements Section</h2></summary>
+  <summary><h3>Test Cases For The Elements Section</h3></summary>
 
 <details>
-  <summary><h2>Test Case 1: Text Box</h2></summary>
+  <summary><h3>Test Case 1: Text Box</h3></summary>
 
 **Test Objective:** Verify that the text box accepts user input and displays the results correctly.
 
@@ -67,7 +67,7 @@
 
 
 <details>
-  <summary><h2> Test Case 2: Check Box</h2></summary>
+  <summary><h3> Test Case 2: Check Box</h3></summary>
 
 **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
 
@@ -88,7 +88,7 @@
 
 
 <details>
-  <summary><h2>Test Case 3: Radio Button</h2></summary>
+  <summary><h3>Test Case 3: Radio Button</h3></summary>
 
 **Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
 
@@ -109,7 +109,7 @@
 
 
 <details>
-  <summary><h2>Test Case 4: Web Tables</h2></summary>
+  <summary><h3>Test Case 4: Web Tables</h3></summary>
 
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
@@ -129,7 +129,7 @@
 
 
 <details>
-  <summary><h2>Test Case 5: Buttons</h2></summary>
+  <summary><h3>Test Case 5: Buttons</h3></summary>
 
 **Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
 
@@ -147,7 +147,7 @@
 
 
 <details>
-  <summary><h2>## Test Case 6: Links</h2></summary>
+  <summary><h3>## Test Case 6: Links</h3></summary>
 
 **Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
 
