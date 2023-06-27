@@ -218,7 +218,6 @@
 
 </details>
 
-
 <details>
 <summary><h2>Test Cases For: Alerts, Frame & Windows</h2></summary>
   <details>
@@ -227,11 +226,10 @@
 **Test Objective:** Verify that the buttons on the page open new browser windows or tabs as expected.
 
 **Steps to Follow (Manual Testing):**
-
-    1. Open the webpage **https://demoqa.com/browser-windows** in a browser.
-    2. Click on the "New Tab" button and verify that a new tab opens.
-    3. Switch to the new tab and verify that it has the correct content.
-    4. Repeat for the "New Window" and "New Window Message" buttons.
+  1. Open the webpage **https://demoqa.com/browser-windows** in a browser.
+  2. Click on the "New Tab" button and verify that a new tab opens.
+  3. Switch to the new tab and verify that it has the correct content.
+  4. Repeat for the "New Window" and "New Window Message" buttons.
 
 **Expected Outcome:** After clicking on each button, a new browser window or tab should open with the correct content. The "New Tab" button should open a new tab, the "New Window" button should open a new window, and the "New Window Message" button should open a new window with a message.
   </details>
@@ -243,13 +241,13 @@
 
   **Steps to Follow (Manual Testing):**
 
-    1. Open the webpage **https://demoqa.com/alerts** in a browser.
-    2. Click on the "Click me" button and verify that a browser alert appears.
-    3. Verify that the alert displays the correct message.
-    4. Dismiss the alert and verify that it closes correctly.
-    5. Repeat for the other buttons alerts like the **5 seconds alert**.
-    6. Click on the confirm box alert, once the alert is dismissed, make sure the confirmation message is shown.
-    7. Click on the prompt box alert and write “Angel Hackerman”, and make sure the confirmation message says: “You entered Angel Hackerman”.
+  1. Open the webpage **https://demoqa.com/alerts** in a browser.
+  2. Click on the "Click me" button and verify that a browser alert appears.
+  3. Verify that the alert displays the correct message.
+  4. Dismiss the alert and verify that it closes correctly.
+  5. Repeat for the other buttons alerts like the **5 seconds alert**.
+  6. Click on the confirm box alert, once the alert is dismissed, make sure the confirmation message is shown.
+  7. Click on the prompt box alert and write “Angel Hackerman”, and make sure the confirmation message says: “You entered Angel Hackerman”.
 
 **Expected Outcome:** After clicking on each button, a browser alert should appear with the correct message. The alert should be dismissable and should close correctly when dismissed.
   </details>
