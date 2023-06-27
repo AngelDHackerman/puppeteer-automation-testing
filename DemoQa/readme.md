@@ -59,7 +59,7 @@
 
   **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
-  ****************************Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
+  **Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
   </details>
 
 
@@ -111,7 +111,7 @@
   <details>
     <summary><h3>Test Case 4: Web Tables</h3></summary>
 
-    **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
+  **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
   **Steps to Follow (Manual Testing):**
 
