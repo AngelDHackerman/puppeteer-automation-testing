@@ -2,11 +2,12 @@
 
 > In this case we are about to **test several features** of the DemoQa page using **puppeteer**, features such as the elemets, forms, alerts, accordians and so many more.
 **Object Under Test:** [https://demoqa.com/](https://demoqa.com/)
-> 
 
-## **Test Plan for DemoQA**
 
-**Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
+<details>
+  <summary><h2>Test Plan for DemoQA</h2></summary>
+
+  **Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
 
 **Scope:** This test plan covers the following elements on the webpage:
 
@@ -36,7 +37,10 @@
 
 **Risks:** The main risks to this test plan are changes to the QA demonstration webpage that could cause tests to fail. To mitigate this risk, the webpage will be reviewed before each test session to identify any changes that could affect the tests.
 
-## Test Cases For The Elements Section
+</details>
+
+<details>
+  <summary><h2>Test Cases For The Elements Section</h2></summary>
 
 ## Test Case 1: Text Box
 
@@ -128,3 +132,6 @@
 4. Repeat for the other links ("No Content", "Moved", "Bad Request", "Unauthorized", "Forbidden", "Not Found").
 
 **Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
+
+</details>
+
