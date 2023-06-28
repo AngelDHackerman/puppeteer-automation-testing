@@ -321,4 +321,33 @@ and the last one to __-5__ (expecting to fail as well).
 
 **Expected Outcome:** After clicking the "Start" button, the progress bar should fill up over time. When it's fully filled, it should display "100%".
 </details>
+
+<details>
+<summary><h3>Test Case 6: Tabs</h3></summary>
+
+**Test Objective:** Verify that the tabs on the page function correctly, displaying the correct content when each tab is selected.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/tabs in a browser.
+2. Click on the "What" tab and verify that the correct content is displayed.
+3. Repeat for the "Origin" and "Use" tabs.
+
+**Expected Outcome:** After clicking on a tab, the correct content should be displayed. The "What" tab should display content about what Lorem Ipsum is, the "Origin" tab should display content about the origin of Lorem Ipsum, and the "Use" tab should display content about the use of Lorem Ipsum.
+</details>
+
+<details>
+<summary><h3>Test Case 7: Tool tips (hover) </h3></summary>
+
+**Test Objective:** Verify that the tool tips function correctly, appearing when the user hovers over the specified elements and displaying the correct content.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/tool-tips in a browser.
+2. Hover over the "Hover me to see" button and verify that a tool tip appears with the correct content.
+3. Repeat for the "Hover me to see" input and the "Contrary" and "1.10.32" links.
+
+**Expected Outcome:** After hovering over each specified element, a tool tip should appear with the correct content. The tool tip for the "Hover me to see" button should say "You hovered over the Button", the tool tip for the "Hover me to see" input should say "You hovered over the text field", and the tool tips for the "Contrary" and "1.10.32" links should say "You hovered over the Contrary" and "You hovered over the 1.10.32", respectively.
+</details>
+
 </details>
