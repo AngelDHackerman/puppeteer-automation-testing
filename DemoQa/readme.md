@@ -290,7 +290,7 @@
 </details>
 
 <details>
-<summary><h3>Test Case 14: Slider</h3></summary>
+<summary><h3>Test Case 4: Slider</h3></summary>
 
 **Test Objective:** Verify that the slider functions correctly, allowing the user to adjust the value and displaying the adjusted value correctly.
 
@@ -306,4 +306,19 @@ and the last one to __-5__ (expecting to fail as well).
 **Expected Outcome:** After adjusting the slider, the adjusted value should be displayed correctly. The displayed value should match the position of the slider.
 </details>
 
+<details>
+<summary><h3>Test Case 5: Progress Bar</h3></summary>
+
+**Test Objective:** Verify that the progress bar functions correctly, filling up over time when the "Start" button is clicked and displaying the correct percentage.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/progress-bar in a browser.
+2. Click the "Start" button and observe the progress bar, click again now in the "stop" button once the 45% is reached.
+3. Then click again in the "Start" button and "Stop" it once the 80% is reached, click again in "Start".
+4. Verify that the progress bar fills up over time and reaches 100%.
+5. Click on "Reset" and make sure progress bar goes back to "empty"
+
+**Expected Outcome:** After clicking the "Start" button, the progress bar should fill up over time. When it's fully filled, it should display "100%".
+</details>
 </details>
