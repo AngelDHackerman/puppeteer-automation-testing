@@ -286,7 +286,24 @@
 6. Select 31 october 2028 with time at 3:00 PM
 7. Verify that the selected date is displayed in the date input.
 
-**Expected Outcome:** After selecting a date from the date picker, the selected date should be displayed in the date input. The format of the date should be "mm/dd/yyyy".
+**Expected Outcome:** After selecting a date from the date picker, the selected date should be displayed in the date input. The format of the date should be "mm/dd/yyyy". In the Date And Time file the format will be: "MM/DD/YYYY HH:MM PM/AM"
+</details>
+
+<details>
+<summary><h3>Test Case 14: Slider</h3></summary>
+
+**Test Objective:** Verify that the slider functions correctly, allowing the user to adjust the value and displaying the adjusted value correctly.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/slider in a browser.
+2. Adjust the slider to a specific value, 
+first to __1__, then in other test to __99__, 
+in otherone __101__ (expecting to fail),
+and the last one to __-5__ (expecting to fail as well).
+3. Verify that the adjusted value is displayed correctly.
+
+**Expected Outcome:** After adjusting the slider, the adjusted value should be displayed correctly. The displayed value should match the position of the slider.
 </details>
 
 </details>
