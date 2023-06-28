@@ -235,3 +235,42 @@
 **Expected Outcome:** After clicking on each button, a modal dialog should appear with the correct content. The "Small modal" button should open a small modal dialog, and the "Large modal" button should open a large modal dialog. When the modal is closed, it should disappear from the screen.
   </details>
 </details>
+
+<details>
+<summary><h2>Test Caes For: Widgets</h2></summary>
+
+<details>
+<summary><h3>Test Case 1: Accordian</h3></summary>
+
+**Test Objective:** Verify that the accordion on the page functions correctly, expanding and collapsing sections as expected and displaying the correct content.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/accordian in a browser.
+2. Click on the first section of the accordion ("What is Lorem Ipsum?") and verify that it expands to display the correct content.
+3. Click on the first section again and verify that it collapses.
+4. Repeat for the other sections of the accordion ("Where does it come from?" and "Why do we use it?").
+
+**Expected Outcome:** After clicking on a section of the accordion, it should expand to display the correct content. When clicked again, it should collapse. The other sections should behave in the same way.
+</details>
+
+<details>
+<summary><h3>Test Case 2: Auto Complete</h3></summary>
+
+**Test Objective:** Verify that the autocomplete fields on the page function correctly, suggesting the correct options as the user types.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/auto-complete in a browser.
+2. Click on the "Type multiple color names" field and start typing a color name.
+3. type "r" and select "Green" from the dropdown options
+4. Verify that the correct color names are suggested as you type.
+5. Click on one of the suggested color names and verify that it is added to the field.
+6. Repeat for the "Type single color name" field, e.g type "b" and select "black"
+
+**Expected Outcome:** After typing into an autocomplete field, the correct color names should be suggested. When a suggested color name is clicked, it should be added to the field. The "Type multiple color names" field should allow multiple color names to be added, while the "Type single color name" field should only allow one.
+</details>
+
+
+
+</details>
