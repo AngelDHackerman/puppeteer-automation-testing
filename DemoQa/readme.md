@@ -364,4 +364,19 @@ and the last one to __-5__ (expecting to fail as well).
 **Expected Outcome:** The "Main Item 2" menu should expand to display the correct content when hovered over. The "SUB SUB LIST > SUB SUB ITEM 2" should be displayed correctly when "Main Item 2" is expanded.
 </details>
 
+<details>
+<summary><h3>Test Case 9: Select Menu</h3></summary>
+
+**Test Objective:** Verify that the dropdown menus on the page function correctly, allowing the user to select options and displaying the selected options correctly.
+
+**Steps to Follow (Manual Testing):**
+
+Open the webpage https://demoqa.com/select-menu in a browser.
+Click on the "Select Value" dropdown menu and select an option e.g. group 1, option2; group 2, option 1. Verify that the selected option is displayed correctly.
+Repeat for the "Select One", and "Select Title" dropdown menus, e.g. Ms. Dr. Prof.
+Click on the "Old Style Select Menu" dropdown menu, select a color, and verify that the selected color is displayed correctly.
+Click on the "Multiselect drop down" menu, select one or more options, and verify that the selected options are displayed correctly.
+Repeat for the "Standard multi select" dropdown menu.
+</details>
+
 </details>
