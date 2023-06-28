@@ -271,6 +271,22 @@
 **Expected Outcome:** After typing into an autocomplete field, the correct color names should be suggested. When a suggested color name is clicked, it should be added to the field. The "Type multiple color names" field should allow multiple color names to be added, while the "Type single color name" field should only allow one.
 </details>
 
+<details>
+<summary><h3>Test Case 3: Date Picker</h3></summary>
 
+**Test Objective:** Verify that the date picker functions correctly, allowing the user to select a date and displaying the selected date correctly.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/date-picker in a browser.
+2. Click on the date input to open the date picker.
+3. Select the date 20 of November 2025
+4. Verify that the selected date is displayed in the date input.
+5. Click on the input of the Date and Time. 
+6. Select 31 october 2028 with time at 3:00 PM
+7. Verify that the selected date is displayed in the date input.
+
+**Expected Outcome:** After selecting a date from the date picker, the selected date should be displayed in the date input. The format of the date should be "mm/dd/yyyy".
+</details>
 
 </details>
