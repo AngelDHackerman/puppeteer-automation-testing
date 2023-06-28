@@ -350,4 +350,18 @@ and the last one to __-5__ (expecting to fail as well).
 **Expected Outcome:** After hovering over each specified element, a tool tip should appear with the correct content. The tool tip for the "Hover me to see" button should say "You hovered over the Button", the tool tip for the "Hover me to see" input should say "You hovered over the text field", and the tool tips for the "Contrary" and "1.10.32" links should say "You hovered over the Contrary" and "You hovered over the 1.10.32", respectively.
 </details>
 
+<details>
+<summary><h3>Test Case 8: Menu</h3></summary>
+
+**Test Objective:** Verify that the "Main Item 2" menu functions correctly, expanding and collapsing sections as expected and displaying the correct content.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage in a browser.
+2. Hover over the "Main Item 2" menu and verify that it expands to display the correct content.
+3. Hover over the "SUB SUB LIST > SUB SUB ITEM 2" and verify that it is displayed correctly.
+
+**Expected Outcome:** The "Main Item 2" menu should expand to display the correct content when hovered over. The "SUB SUB LIST > SUB SUB ITEM 2" should be displayed correctly when "Main Item 2" is expanded.
+</details>
+
 </details>
