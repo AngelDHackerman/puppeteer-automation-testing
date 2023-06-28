@@ -63,9 +63,6 @@
   </details>
 
 
-
-
-
   <details>
     <summary><h3> Test Case 2: Check Box</h3></summary>
 
@@ -85,8 +82,6 @@
   </details>
 
 
-
-
   <details>
     <summary><h3>Test Case 3: Radio Button</h3></summary>
 
@@ -104,8 +99,6 @@
 
   **Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
   </details>
-
-
 
 
   <details>
@@ -144,8 +137,6 @@
   </details>
 
 
-
-
   <details>
     <summary><h3>Test Case 6: Links</h3></summary>
 
@@ -166,9 +157,9 @@
 
 
 <details>
-  <summary><h2>Test Cases For The Form Section</h2></summary> 
+  <summary><h2>Test Cases For: Form Section</h2></summary> 
 
- <h3>Test Case 7: Automation Practice Form</h3>
+ <h3>Test Case 1: Automation Practice Form</h3>
 
 **Test Objective:** Verify that the form on the page can be filled out correctly and that the correct output is displayed when the form is submitted.
 
@@ -192,36 +183,12 @@
 </details>
 
 
-<details>
-  <summary><h2>Test Cases For The Form Section</h2></summary>
-  <h3>Test Case 7: Automation Practice Form</h3>
-
-**Test Objective:** Verify that the form on the page can be filled out correctly and that the correct output is displayed when the form is submitted.
-
-**Steps to Follow (Manual Testing):**
-
-1. Open the webpage **https://demoqa.com/automation-practice-form** in a browser.
-2. Enter a first name into the "First Name" field.
-3. Enter a last name into the "Last Name" field.
-4. Enter an email into the "Email" field.
-5. Select a gender.
-6. Enter a mobile number into the "Mobile Number" field.
-7. Enter a subject into the "Subjects" field.
-8. Select a hobby.
-9. Enter an address into the "Current Address" field.
-10. Select a state from the "State" dropdown.
-11. Select a city from the "City" dropdown.
-12. Click the "Submit" button.
-13. Verify that the correct output is displayed.
-
-**Expected Outcome:** After filling out the form and clicking "Submit", the correct output should be displayed. This output should match the data you entered into the form fields.
-
-</details>
 
 <details>
 <summary><h2>Test Cases For: Alerts, Frame & Windows</h2></summary>
+
   <details>
-    <summary><h3>Test Case 8: Browser Windows</h3></summary>
+    <summary><h3>Test Case 1: Browser Windows</h3></summary>
 
 **Test Objective:** Verify that the buttons on the page open new browser windows or tabs as expected.
 
@@ -235,7 +202,7 @@
   </details>
 
   <details>
-    <summary><h3>Test Case 9: Browser Alerts</h3></summary>
+    <summary><h3>Test Case 2: Browser Alerts</h3></summary>
     
   **Test Objective:** Verify that the buttons on the page trigger the correct browser alerts and that the alerts display the correct messages.
 
@@ -253,9 +220,7 @@
   </details>
 
   <details>
-  <summary><h2>Test Case 10: Modal Dialogs</h2></summary>
-
-<h3>Test Case 10: Modal Dialogs</h3> 
+  <summary><h3>Test Case 3: Modal Dialogs</h3></summary>
 
 **Test Objective:** Verify that the buttons on the page open the correct modal dialogs and that the dialogs display the correct content.
 
