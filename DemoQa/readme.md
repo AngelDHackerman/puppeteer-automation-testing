@@ -251,4 +251,22 @@
 
 **Expected Outcome:** After clicking on each button, a browser alert should appear with the correct message. The alert should be dismissable and should close correctly when dismissed.
   </details>
+
+  <details>
+  <summary><h2>Test Case 10: Modal Dialogs</h2></summary>
+
+<h3>Test Case 10: Modal Dialogs</h3> 
+
+**Test Objective:** Verify that the buttons on the page open the correct modal dialogs and that the dialogs display the correct content.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage **https://demoqa.com/modal-dialogs** in a browser.
+2. Click on the "Small modal" button and verify that a small modal dialog appears with the correct content.
+3. Close the small modal and verify that it closes correctly.
+4. Click on the "Large modal" button and verify that a large modal dialog appears with the correct content.
+5. Close the large modal and verify that it closes correctly.
+
+**Expected Outcome:** After clicking on each button, a modal dialog should appear with the correct content. The "Small modal" button should open a small modal dialog, and the "Large modal" button should open a large modal dialog. When the modal is closed, it should disappear from the screen.
+  </details>
 </details>
