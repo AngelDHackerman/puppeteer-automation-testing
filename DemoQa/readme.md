@@ -121,6 +121,12 @@
   7. Verify that the correct output is displayed below the radio buttons.
 
   **Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
+
+  ![Main page](./images/TestCase3RadioButton/01_main.PNG)
+
+  ![Selecting yes](./images/TestCase3RadioButton/02_yes.PNG)
+
+  ![Selecting Impressive](./images/TestCase3RadioButton/03_impressive.PNG)
   </details>
 
 
