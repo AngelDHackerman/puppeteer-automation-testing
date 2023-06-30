@@ -202,8 +202,26 @@
 
   **Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
 
-  </details>
+  ![main page links](./images/TestCase6Links/01_main.PNG)
 
+  ![Home page click](./images/TestCase6Links/02_homeclick.PNG)
+
+  ![Confirmation click home page](./images/TestCase6Links/03_homepage.PNG)
+
+  ![Created 201 status](./images/TestCase4WebTables/)
+
+  ![No content 204 status](./images/TestCase6Links/05_nocontent204.PNG)
+
+  ![Moved 301 status](./images/TestCase6Links/06_moved301.PNG)
+
+  ![Bad request 400 status](./images/TestCase6Links/07_bad-request.PNG)
+
+  ![Unauthorized 401 status](./images/TestCase6Links/08_unauthorized401.PNG)
+
+  ![Forbidden 403 status](./images/TestCase6Links/09_forbidden403.PNG)
+
+  ![Not found 404 status](./images/TestCase6Links/10_notfound404.PNG)
+  </details>
 </details>
 
 
