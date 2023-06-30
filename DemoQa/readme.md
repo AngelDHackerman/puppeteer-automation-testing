@@ -52,8 +52,8 @@
   1. Open the webpage **[https://demoqa.com/text-box](https://demoqa.com/text-box)** in a browser.
   2. Enter a name into the "Full Name" field.
   3. Enter an email into the "Email" field.
-  4. Enter an address into the "Current Address" field.
-  5. Enter another address into the "Permanent Address" field.
+  4. Enter an address into the "Current Address" field. (9896 Rockland Street Spartanburg, SC 29301) 
+  5. Enter another address into the "Permanent Address" field. (9896 Rockland Street Spartanburg, SC 29301)
   6. Click the "Submit" button.
   7. Verify that the results are displayed correctly under "Output".
 
@@ -378,5 +378,6 @@ Click on the "Old Style Select Menu" dropdown menu, select a color, and verify t
 Click on the "Multiselect drop down" menu, select one or more options, and verify that the selected options are displayed correctly.
 Repeat for the "Standard multi select" dropdown menu.
 </details>
-
 </details>
+
+
