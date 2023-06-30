@@ -62,13 +62,13 @@
   **Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
 
   __Opening the page to test:__
-  ![Step 1, opening the page to test](./images/01_mainpage.PNG)
+  ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
 
   __Filling Out the form__
-  ![Filling Out the form](./images/02_information.PNG)
+  ![Filling Out the form](./images/TestCase1TextBox/02_information.PNG)
 
   __Output of the form__
-  ![Output of the form](./images/03_ouputInformation.PNG)
+  ![Output of the form](./images/TestCase1TextBox/03_ouputInformation.PNG)
   </details>
 
 
@@ -88,6 +88,20 @@
   7. Collapse all directories by clicking on the toggle of the parent directories:  Desktop, Documents, Downloads and then collapse the directory Home.
 
   **Expected Outcome:** After clicking on a checkbox, it should be selected and the correct output should be displayed in the "Checked and unchecked" box. If the checkbox is clicked again, it should be unselected and the output should be updated accordingly.
+
+  ![main page](./images/TestCase2CheckBox/01_main.PNG)
+
+  ![toggle the first directories](./images/TestCase2CheckBox/02_toggle.PNG)
+
+  ![toggling severla files](./images/TestCase2CheckBox/03_toggles.PNG)
+
+  ![showing subfiles](./images/TestCase2CheckBox/04_subfiles.PNG)
+
+  ![selecting all the files](./images/TestCase2CheckBox/05_selecting.PNG)
+
+  ![unselecting the files](./images/TestCase2CheckBox/06_unselecting.PNG)
+
+  ![collapsing all directories](./images/TestCase2CheckBox/07_collapsing.PNG)
   </details>
 
 
