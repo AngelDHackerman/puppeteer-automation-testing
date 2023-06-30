@@ -145,9 +145,23 @@
   6. In the input “type to search” type “Angel” and the new row created has to be displayed, make sure the first column if for “Angel Hackerman” 
 
   **Expected Outcome:** The table should display the correct data and the buttons in the "Action" column should function as expected. If there is an "Add" button, it should allow you to add a new row to the table, also we should be able to delete and edit the columns of the table. 
+
+  ![Main page to test](./images/TestCase4WebTables/01_main.PNG)
+
+  ![Deleting row](./images/TestCase4WebTables/02_deleting.PNG)
+
+  ![Editing row](./images/TestCase4WebTables/03_editing.PNG)
+
+  ![Changing name](./images/TestCase4WebTables/04_changingName.PNG)
+
+  ![Changed name](./images/TestCase4WebTables/05_changed.PNG)
+
+  ![Adding the information](./images/TestCase4WebTables/06_adding.PNG)
+
+  ![Added](./images/TestCase4WebTables/07_added.PNG)
+
+  ![Using search barr](./images/TestCase4WebTables/08_searching.PNG)
   </details>
-
-
 
 
   <details>
