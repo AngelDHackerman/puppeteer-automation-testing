@@ -60,6 +60,15 @@
   **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
   **Automation code using puppeteer is [here](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/DemoQa).**
+
+  __Opening the page to test:__
+  ![Step 1, opening the page to test](./images/01_mainpage.PNG)
+
+  __Filling Out the form__
+  ![Filling Out the form](./images/02_information.PNG)
+
+  __Output of the form__
+  ![Output of the form](./images/03_ouputInformation.PNG)
   </details>
 
 
