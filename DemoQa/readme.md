@@ -172,11 +172,19 @@
   **Steps to Follow (Manual Testing):**
 
   1. Open the webpage **[https://demoqa.com/buttons](https://demoqa.com/buttons)** in a browser.
-  2. Double click on the "Double Click Me" button and verify that the correct message is displayed.
-  3. Right click on the "Right Click Me" button and verify that the correct message is displayed.
+  2. Right click on the "Right Click Me" button and verify that the correct message is displayed.
+  3. Double click on the "Double Click Me" button and verify that the correct message is displayed.
   4. Click on the "Click Me" button and verify that the correct message is displayed.
 
   **Expected Outcome:** After interacting with each button, the correct message should be displayed below the button. The "Double Click Me" button should display a message about a double click, the "Right Click Me" button should display a message about a right click, and the "Click Me" button should display a message about a click.
+
+  ![main page buttons](./images/TestCase5Buttons/01_main.PNG)
+
+  ![right clicking](./images/TestCase5Buttons/02_rightclick.PNG)
+
+  ![double clicking](./images/TestCase5Buttons/03_doubleclick.PNG)
+
+  ![left click](./images/TestCase5Buttons/04_click.PNG)
   </details>
 
 
@@ -193,6 +201,7 @@
   4. Repeat for the other links ("No Content", "Moved", "Bad Request", "Unauthorized", "Forbidden", "Not Found").
 
   **Expected Outcome:** After clicking on each link, the correct API status should be displayed. For example, after clicking on the "Created" link, the API status "201 Created" should be displayed.
+
   </details>
 
 </details>
