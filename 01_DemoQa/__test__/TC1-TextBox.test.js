@@ -10,10 +10,13 @@ describe('Helpers de utilidad', () => {
   beforeEach( async () => { 
     browser = await puppeteer.launch({ 
       headless: false,
+      defaultViewport: null, // Set default viewport to null
+      args: ['--start-maximized'] // Start browser maximized
     });
 
-  // Adding the web page to test: 
+    // Adding the web page to test: 
     page = await browser.newPage()
+
     await page.goto('https://demoqa.com/text-box', { waituntil: 'networkidel0' })
   }, timeDelay)
 
