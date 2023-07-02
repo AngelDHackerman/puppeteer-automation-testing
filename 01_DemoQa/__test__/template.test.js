@@ -23,7 +23,7 @@ describe('Helpers de utilidad', () => {
   // Hook afterEach 
   afterEach ( async () => { 
     // Wait for 3 seconds before closing the browser
-    await new Promise(resolve => setTimeout(resolve, 9000));
+    await new Promise(resolve => setTimeout(resolve, 4000));
     await browser.close()
   }, timeDelay); 
 

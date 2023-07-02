@@ -1,13 +1,13 @@
 const puppeteer = require('puppeteer');
-const {click, type} = require('../libs/helpers')
+const {click, type, getText} = require('../libs/helpers')
 const timeDelay = 17_000_000
 
-describe('Helpers de utilidad', () => { 
+describe('Test Case 1, Text Box', () => { 
   let browser 
   let page 
 
   // Hook beforeEach 
-  beforeEach( async () => { 
+  beforeAll ( async () => { 
     browser = await puppeteer.launch({ 
       headless: false,
       defaultViewport: null, // Set default viewport to null
@@ -20,12 +20,13 @@ describe('Helpers de utilidad', () => {
     await page.goto('https://demoqa.com/text-box', { waituntil: 'networkidel0' })
   }, timeDelay)
 
-  // Hook afterEach 
-  afterEach ( async () => { 
+  // Hook afterAll 
+  afterAll ( async () => { 
     // Wait for 3 seconds before closing the browser
-    await new Promise(resolve => setTimeout(resolve, 9000));
+    await new Promise(resolve => setTimeout(resolve, 3000));
     await browser.close()
   }, timeDelay); 
+
 
   // Executing the test cases: 
   it ('Check that inputs can be fill out', async () => { 
@@ -40,5 +41,11 @@ describe('Helpers de utilidad', () => {
     await click(page, '#submit')
 
   }, timeDelay);
+
+  it ('Validating the output of the form', async () => { 
+
+    const nameText = await getText(page, '#name');
+    expect(nameText).toBe('Name:Angel Hackerman');
+  })
 
 }, timeDelay)
