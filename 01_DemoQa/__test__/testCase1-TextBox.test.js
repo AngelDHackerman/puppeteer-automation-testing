@@ -11,7 +11,7 @@ describe('Helpers de utilidad', () => {
       headless: false,
     });
 
-    // Adding the web page to test: 
+  // Adding the web page to test: 
     page = await browser.newPage()
     await page.goto('https://demoqa.com/', { waituntil: 'networkidel0' })
   }, timeDelay)
@@ -23,8 +23,9 @@ describe('Helpers de utilidad', () => {
 
   // Executing the test cases: 
 
-  it ('Helpers', async () => { 
+  it ('Check that inputs can be fill out', async () => { 
 
+    await page.waitForSelector('#submit')
 
     new Promise(resolve => setTimeout(resolve, timeDelay))
   });
