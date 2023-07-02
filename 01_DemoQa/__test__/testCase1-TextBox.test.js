@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const {click, type} = require('../libs/helpers')
 const timeDelay = 17_000_000
 
 describe('Helpers de utilidad', () => { 
@@ -26,6 +27,7 @@ describe('Helpers de utilidad', () => {
   it ('Check that inputs can be fill out', async () => { 
 
     await page.waitForSelector('#submit')
+    // await typeof()
 
     new Promise(resolve => setTimeout(resolve, timeDelay))
   });
