@@ -34,6 +34,7 @@ describe('Test Case 1, Text Box', () => {
     let typeDelay = { delay: 100}
 
     await page.waitForSelector('#submit')
+
     await type(page, '#userName', 'Angel Hackerman', typeDelay)
     await type(page, '#userEmail', 'AngelHackerman@testing.com', typeDelay)
     await type(page, '#currentAddress', '9896 Rockland Street Spartanburg, SC 29301', typeDelay)
@@ -42,10 +43,28 @@ describe('Test Case 1, Text Box', () => {
 
   }, timeDelay);
 
+  // Executing the validation: 
   it ('Validating the output of the form', async () => { 
+
+  // Wait for a short time before getting the text
+  await page.waitForTimeout(1000);
 
     const nameText = await getText(page, '#name');
     expect(nameText).toBe('Name:Angel Hackerman');
-  })
+
+    const emailText = await getText(page, '#email');
+    expect(emailText).toBe('Email:AngelHackerman@testing.com');
+
+    // todo: Add note about repetitive ID #currentAddress
+    const currentAdrText = await page.$eval('p#currentAddress', el => el.innerText);
+    expect(currentAdrText).toBe('Current Address :9896 Rockland Street Spartanburg, SC 29301');
+    
+    // todo: Add note about repetitive ID #permanentAddress
+    const permanentAdrText = await page.$eval('p#permanentAddress', el => el.innerText);
+    expect(permanentAdrText).toBe('Permananet Address :9896 Rockland Street Spartanburg, SC 29301');
+    
+  }, timeDelay)
 
 }, timeDelay)
+
+
