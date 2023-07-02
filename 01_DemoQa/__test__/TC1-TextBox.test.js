@@ -14,7 +14,7 @@ describe('Helpers de utilidad', () => {
 
   // Adding the web page to test: 
     page = await browser.newPage()
-    await page.goto('https://demoqa.com/', { waituntil: 'networkidel0' })
+    await page.goto('https://demoqa.com/text-box', { waituntil: 'networkidel0' })
   }, timeDelay)
 
   // Hook afterEach 
@@ -23,13 +23,11 @@ describe('Helpers de utilidad', () => {
   }); 
 
   // Executing the test cases: 
-
   it ('Check that inputs can be fill out', async () => { 
 
     await page.waitForSelector('#submit')
-    // await typeof()
+    await type(page, '#userName', 'Angel Hackerman', { delay: 100 })
 
-    new Promise(resolve => setTimeout(resolve, timeDelay))
-  });
+  }, timeDelay);
 
 }, timeDelay)
