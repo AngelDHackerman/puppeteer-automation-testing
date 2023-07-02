@@ -22,14 +22,22 @@ describe('Helpers de utilidad', () => {
 
   // Hook afterEach 
   afterEach ( async () => { 
+    // Wait for 3 seconds before closing the browser
+    await new Promise(resolve => setTimeout(resolve, 9000));
     await browser.close()
-  }); 
+  }, timeDelay); 
 
   // Executing the test cases: 
   it ('Check that inputs can be fill out', async () => { 
 
+    let typeDelay = { delay: 100}
+
     await page.waitForSelector('#submit')
-    await type(page, '#userName', 'Angel Hackerman', { delay: 100 })
+    await type(page, '#userName', 'Angel Hackerman', typeDelay)
+    await type(page, '#userEmail', 'AngelHackerman@testing.com', typeDelay)
+    await type(page, '#currentAddress', '9896 Rockland Street Spartanburg, SC 29301', typeDelay)
+    await type(page, '#permanentAddress', '9896 Rockland Street Spartanburg, SC 29301', typeDelay)
+    await click(page, '#submit')
 
   }, timeDelay);
 

@@ -1,7 +1,7 @@
 module.exports = { 
 
   // Creating the "click" helper
-  click: async function ( page, selector, opts = {}) { 
+  click: async function ( page, selector) { 
     try{ 
 
       // It's good practice to wait for the selector we're going to interact with. 
