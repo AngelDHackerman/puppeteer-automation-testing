@@ -86,11 +86,18 @@
   1. Open the webpage https://demoqa.com/text-box in a browser.
   2. Enter a name into the "Full Name" field.
   3. Enter an incorrectly formatted email into the "Email" field (e.g., "test@com").
-  4. Enter an address into the "Current Address" field.
+  4. Enter an address into the "Current Address" field. (9896 Rockland Street Spartanburg, SC 29301)
   5. Enter another address into the "Permanent Address" field.
   6. Click the "Submit" button.
-  7. Verify that an error message is displayed and the form is not submitted.
-  8. Expected Outcome: An error message should be displayed indicating that the email is not in the correct format, and the form should not be submitted.
+  7. Verify that email field border has turn into red, indicating that the format is not valid 
+
+  **Expected Outcome:** Email field border has turn into red, indicating that the format is not valid , and the form should not be submitted.
+
+  ![main page](./images/TestCase1TextBox/NTC2/01_main.png)
+
+  ![wrong email format](./images/TestCase1TextBox/NTC2/02_wrongEmail.png)
+
+  ![error message](./images/TestCase1TextBox/NTC2/03_errorMessage.png)
 
 </details>
 <details>
@@ -108,6 +115,25 @@
   6. Click the "Submit" button.
   7. Verify that an error message is displayed and the form is not submitted.
   8. Expected Outcome: An error message should be displayed indicating that the full name contains invalid characters, and the form should not be submitted.
+
+</details>
+
+<details>
+  <summary><h3>Edge Test Case: Not Mandatory Field</h3></summary>
+
+**Test Objective:** Verify that the form accepts submissions when one or more non-mandatory fields are left empty.
+
+**Steps to Follow (Manual Testing):**
+
+  1. Open the webpage https://demoqa.com/text-box in a browser.
+  2. Enter a name into the "Full Name" field.
+  3. Enter a valid email into the "Email" field.
+  4. Leave the "Current Address" field empty.
+  5. Leave the "Permanent Address" field empty.
+  6. Click the "Submit" button.
+  7. Verify that the form is submitted successfully and the results are displayed below.
+
+**Expected Outcome:** The form is submitted successfully even with one or more non-mandatory fields left empty. The results displayed below the form should match the data entered into the form fields.
 
 </details>
 
