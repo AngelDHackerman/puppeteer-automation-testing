@@ -69,9 +69,12 @@
   1. Open the webpage https://demoqa.com/text-box in a browser.
   2. Leave all the fields empty.
   3. Click the "Submit" button.
-  4. Verify that an error message is displayed and the form is not submitted.
-  5. Expected Outcome: An error message should be displayed indicating that fields cannot be left empty, and the form should not be submitted.
+  4. Verify that below the form input there is not any return of any kind
+  5. Expected Outcome: No error messages has to be shown, but nothing must change in the page
 
+  ![Main page](./images/TestCase1TextBox/NTC1/01_main.png)
+
+  ![No Error Message](./images/TestCase1TextBox/NTC1/02_no-message.png)
 </details>
 <details>
   <summary><h3>Negative Test Case 2: Incorrect Email Format</h3></summary>
@@ -109,7 +112,7 @@
 </details>
 
   <h2>Testing The Happy Path:</h2>
-  
+
   __Opening the page to test:__
   ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
 
