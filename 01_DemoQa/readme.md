@@ -110,13 +110,19 @@
 
   1. Open the webpage https://demoqa.com/text-box in a browser.
   2. Enter a name into the "Full Name" field.
-  3. Enter a valid email into the "Email" field.
-  4. Leave the "Current Address" field empty.
+  3. Leave the "Email" field empty.
+  4. Enter a valid "Current Address" value. (9896 Rockland Street Spartanburg, SC 29301)
   5. Leave the "Permanent Address" field empty.
   6. Click the "Submit" button.
   7. Verify that the form is submitted successfully and the results are displayed below.
 
 **Expected Outcome:** The form is submitted successfully even with one or more non-mandatory fields left empty. The results displayed below the form\ should match the data entered into the form fields.
+
+![main page](./images/TestCase1TextBox/NTC3/01_main.png)
+
+![incomplete inputs](./images/TestCase1TextBox/NTC3/02_incomplete_inputs.png)
+
+![final output](./images/TestCase1TextBox/NTC3/03_final_output.png)
 
 </details>
 
