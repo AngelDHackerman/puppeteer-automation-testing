@@ -108,6 +108,8 @@
 
 </details>
 
+  <h2>Testing The Happy Path:</h2>
+  
   __Opening the page to test:__
   ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
 
