@@ -50,7 +50,7 @@
   **Steps to Follow (Manual Testing):**
 
   1. Open the webpage **[https://demoqa.com/text-box](https://demoqa.com/text-box)** in a browser.
-  2. Enter a name into the "Full Name" field.
+  2. Enter a name into the "Full Name" field. e.g. __"Angel Hackerman"__, __"Angel 1234" (numbers can also be included)__
   3. Enter an email into the "Email" field.
   4. Enter an address into the "Current Address" field. (9896 Rockland Street Spartanburg, SC 29301) 
   5. Enter another address into the "Permanent Address" field. (9896 Rockland Street Spartanburg, SC 29301)
@@ -100,23 +100,6 @@
   ![error message](./images/TestCase1TextBox/NTC2/03_errorMessage.png)
 
 </details>
-<details>
-    <summary><h3>Negative Test Case 3: Invalid Characters in Full Name</h3></summary>
-
-**Test Objective:** Verify that the form does not accept submissions when the full name contains invalid characters.
-
-**Steps to Follow (Manual Testing):**
-
-  1. Open the webpage https://demoqa.com/text-box in a browser.
-  2. Enter a name with invalid characters into the "Full Name" field (e.g., "John123").
-  3. Enter a valid email into the "Email" field.
-  4. Enter an address into the "Current Address" field.
-  5. Enter another address into the "Permanent Address" field.
-  6. Click the "Submit" button.
-  7. Verify that an error message is displayed and the form is not submitted.
-  8. Expected Outcome: An error message should be displayed indicating that the full name contains invalid characters, and the form should not be submitted.
-
-</details>
 
 <details>
   <summary><h3>Edge Test Case: Not Mandatory Field</h3></summary>
@@ -133,7 +116,7 @@
   6. Click the "Submit" button.
   7. Verify that the form is submitted successfully and the results are displayed below.
 
-**Expected Outcome:** The form is submitted successfully even with one or more non-mandatory fields left empty. The results displayed below the form should match the data entered into the form fields.
+**Expected Outcome:** The form is submitted successfully even with one or more non-mandatory fields left empty. The results displayed below the form\ should match the data entered into the form fields.
 
 </details>
 
