@@ -4,7 +4,7 @@
 **Object Under Test:** [https://demoqa.com/](https://demoqa.com/)
 
 
-  <summary><h2>Test Plan for DemoQA</h2></summary>
+  <summary><h1>Test Plan for DemoQA</h1></summary>
 
   **Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
 
@@ -38,7 +38,7 @@
 
 
 <details>
-  <summary><h2>Test Cases For The Elements Section</h2></summary>
+  <summary><h1>Test Cases For The Elements Section</h1></summary>
 
   <details>
     <summary><h3>Test Case 1: Text Box</h3></summary>
@@ -57,8 +57,19 @@
 
   **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
+  <h3>Testing the happy path</h3>
+
+  __Opening the page to test:__
+  ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
+
+  __Filling Out the form__
+  ![Filling Out the form](./images/TestCase1TextBox/02_information.PNG)
+
+  __Output of the form__
+  ![Output of the form](./images/TestCase1TextBox/03_ouputInformation.PNG)
+
   <details>
-    <summary><h3>Negative Test Case 1: Empty Fields</h3></summary>
+    <summary><h3>Negative Test Case: Empty Fields</h3></summary>
 
   **Test Objective:** Verify that the form does not accept submissions when all fields are left empty.
 
@@ -75,7 +86,7 @@
   ![No Error Message](./images/TestCase1TextBox/NTC1/02_no-message.png)
 </details>
 <details>
-  <summary><h3>Negative Test Case 2: Incorrect Email Format</h3></summary>
+  <summary><h3>Negative Test Case: Incorrect Email Format</h3></summary>
 
   **Test Objective:** Verify that the form does not accept submissions when the email is not in the correct format.
 
@@ -123,24 +134,11 @@
 ![final output](./images/TestCase1TextBox/NTC3/03_final_output.png)
 
 </details>
-
-<details>
-<summary><h3>Testing The Happy Path:</h3></summary>
-
-  __Opening the page to test:__
-  ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
-
-  __Filling Out the form__
-  ![Filling Out the form](./images/TestCase1TextBox/02_information.PNG)
-
-  __Output of the form__
-  ![Output of the form](./images/TestCase1TextBox/03_ouputInformation.PNG)
-</details>
 </details>
 
 
   <details>
-    <summary><h3> Test Case 2: Check Box</h3></summary>
+    <summary><h1> Test Case 2: Check Box</h1></summary>
 
   **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
 
@@ -173,7 +171,7 @@
 
 
   <details>
-    <summary><h3>Test Case 3: Radio Button</h3></summary>
+    <summary><h1>Test Case 3: Radio Button</h1></summary>
 
   **Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
 
@@ -198,7 +196,7 @@
 
 
   <details>
-    <summary><h3>Test Case 4: Web Tables</h3></summary>
+    <summary><h1>Test Case 4: Web Tables</h1></summary>
 
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
@@ -232,7 +230,7 @@
 
 
   <details>
-    <summary><h3>Test Case 5: Buttons</h3></summary>
+    <summary><h1>Test Case 5: Buttons</h1></summary>
 
   **Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
 
@@ -256,7 +254,7 @@
 
 
   <details>
-    <summary><h3>Test Case 6: Links</h3></summary>
+    <summary><h1>Test Case 6: Links</h1></summary>
 
   **Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
 
@@ -294,7 +292,7 @@
 
 
 <details>
-  <summary><h2>Test Cases For: Form Section</h2></summary> 
+  <summary><h1>Test Cases For: Form Section</h1></summary> 
 
  <h3>Test Case 1: Automation Practice Form</h3>
 
@@ -322,7 +320,7 @@
 
 
 <details>
-<summary><h2>Test Cases For: Alerts, Frame & Windows</h2></summary>
+<summary><h1>Test Cases For: Alerts, Frame & Windows</h1></summary>
 
   <details>
     <summary><h3>Test Case 1: Browser Windows</h3></summary>
@@ -374,7 +372,7 @@
 </details>
 
 <details>
-<summary><h2>Test Caes For: Widgets</h2></summary>
+<summary><h1>Test Caes For: Widgets</h1></summary>
 
 <details>
 <summary><h3>Test Case 1: Accordian</h3></summary>
