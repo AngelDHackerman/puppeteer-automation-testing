@@ -6,7 +6,7 @@ describe('Test Case 1, Text Box', () => {
   let browser 
   let page 
 
-  // Hook beforeEach 
+  // Hook beforeAll
   beforeAll ( async () => { 
     browser = await puppeteer.launch({ 
       headless: false,
@@ -72,7 +72,7 @@ describe('Negative Test Case, Empty Fields', () => {
   let browser 
   let page 
 
-  // Hook beforeEach 
+  // Hook beforeAll
   beforeAll ( async () => { 
     browser = await puppeteer.launch({ 
       headless: false,
