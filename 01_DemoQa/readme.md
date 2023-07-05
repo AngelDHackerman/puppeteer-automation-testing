@@ -254,7 +254,7 @@
 
 
   <details>
-    <summary><h1>Test Case 6: Links</h1></summary>
+    <summary><h3>Test Case 6: Links</h3></summary>
 
   **Test Objective:** Verify that the links on the page respond correctly to user interactions and that the correct API status is received.
 
