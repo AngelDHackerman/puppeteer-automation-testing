@@ -4,7 +4,6 @@
 **Object Under Test:** [https://demoqa.com/](https://demoqa.com/)
 
 
-<details>
   <summary><h2>Test Plan for DemoQA</h2></summary>
 
   **Objective:** The objective of this test plan is to validate the functionality and usability of the interactive elements on the QA demonstration webpage.
@@ -37,7 +36,6 @@
 
 **Risks:** The main risks to this test plan are changes to the QA demonstration webpage that could cause tests to fail. To mitigate this risk, the webpage will be reviewed before each test session to identify any changes that could affect the tests.
 
-</details>
 
 <details>
   <summary><h2>Test Cases For The Elements Section</h2></summary>
@@ -126,7 +124,8 @@
 
 </details>
 
-  <h2>Testing The Happy Path:</h2>
+<details>
+<summary><h3>Testing The Happy Path:</h3></summary>
 
   __Opening the page to test:__
   ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
@@ -136,7 +135,8 @@
 
   __Output of the form__
   ![Output of the form](./images/TestCase1TextBox/03_ouputInformation.PNG)
-  </details>
+</details>
+</details>
 
 
   <details>
