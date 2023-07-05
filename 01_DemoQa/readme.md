@@ -57,7 +57,7 @@
 
   **Expected Outcome:** After clicking "Submit", the results should be displayed under "Output" and should match the data you entered into the form fields.
 
-  <h5>Testing the happy path</h5>
+  <h4>Testing the happy path</h4>
 
   __Opening the page to test:__
   ![Step 1, opening the page to test](./images/TestCase1TextBox/01_mainpage.PNG)
@@ -69,7 +69,7 @@
   ![Output of the form](./images/TestCase1TextBox/03_ouputInformation.PNG)
 
   <details>
-    <summary><h5>Negative Test Case: Empty Fields</h5></summary>
+    <summary><h4>Negative Test Case: Empty Fields</h4></summary>
 
   **Test Objective:** Verify that the form does not accept submissions when all fields are left empty.
 
@@ -86,7 +86,7 @@
   ![No Error Message](./images/TestCase1TextBox/NTC1/02_no-message.png)
 </details>
 <details>
-  <summary><h5>Negative Test Case: Incorrect Email Format</h5></summary>
+  <summary><h4>Negative Test Case: Incorrect Email Format</h4></summary>
 
   **Test Objective:** Verify that the form does not accept submissions when the email is not in the correct format.
 
@@ -111,7 +111,7 @@
 </details>
 
 <details>
-  <summary><h5>Edge Test Case: Not Mandatory Field</h5></summary>
+  <summary><h4>Edge Test Case: Not Mandatory Field</h4></summary>
 
 **Test Objective:** Verify that the form accepts submissions when one or more non-mandatory fields are left empty.
 
