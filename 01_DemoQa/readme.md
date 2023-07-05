@@ -62,7 +62,7 @@
   <details>
     <summary><h3>Negative Test Case 1: Empty Fields</h3></summary>
 
-  **Test Objective:** Verify that the form does not accept submissions when one or more fields are left empty.
+  **Test Objective:** Verify that the form does not accept submissions when all fields are left empty.
 
   **Steps to Follow (Manual Testing):**
 
