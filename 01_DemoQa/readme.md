@@ -138,7 +138,7 @@
 
 
   <details>
-    <summary><h1> Test Case 2: Check Box</h1></summary>
+    <summary><h3> Test Case 2: Check Box</h3></summary>
 
   **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
 
@@ -171,7 +171,7 @@
 
 
   <details>
-    <summary><h1>Test Case 3: Radio Button</h1></summary>
+    <summary><h3>Test Case 3: Radio Button</h3></summary>
 
   **Test Objective:** Verify that the radio buttons can be selected and that the correct output is displayed when a radio button is selected.
 
@@ -196,7 +196,7 @@
 
 
   <details>
-    <summary><h1>Test Case 4: Web Tables</h1></summary>
+    <summary><h3>Test Case 4: Web Tables</h3></summary>
 
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
@@ -230,7 +230,7 @@
 
 
   <details>
-    <summary><h1>Test Case 5: Buttons</h1></summary>
+    <summary><h3>Test Case 5: Buttons</h3></summary>
 
   **Test Objective:** Verify that the buttons on the page respond correctly to user interactions.
 
