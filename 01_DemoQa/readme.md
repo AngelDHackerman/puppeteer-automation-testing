@@ -136,6 +136,7 @@
 </details>
 </details>
 
+---
 
   <details>
     <summary><h3> Test Case 2: Check Box</h3></summary>
