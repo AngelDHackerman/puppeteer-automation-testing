@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --forceExit",
-    "TC1-TextBox": "jest ./__test__/TC1-HappyPath_NegativeCases.test.js"
+    "TC1-TextBox": "jest ./__test__/01_Text-Box-Testing/*.test.js --runInBand"
   },
   "author": "",
   "license": "ISC",
