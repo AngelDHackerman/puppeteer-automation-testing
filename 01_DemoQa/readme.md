@@ -3,6 +3,9 @@
 > In this case we are about to **test several features** of the DemoQa page using **puppeteer**, features such as the elemets, forms, alerts, accordians and so many more.
 **Object Under Test:** [https://demoqa.com/](https://demoqa.com/)
 
+- Want to see the code? Click on the \_\_test\_\_ directory. 
+- Want to see a video about how the automated test cases works? __Click here__ 
+- If you want to read the test cases and check out the screenshots keep scrolling down 👇
 
   <summary><h1>Test Plan for DemoQA</h1></summary>
 
