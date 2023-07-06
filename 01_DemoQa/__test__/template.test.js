@@ -1,13 +1,13 @@
 const puppeteer = require('puppeteer');
-const {click, type} = require('../libs/helpers')
+const {click, type, getText} = require('../../libs/helpers')
 const timeDelay = 17_000_000
+let browser 
+let page 
 
 describe('Helpers de utilidad', () => { 
-  let browser 
-  let page 
 
-  // Hook beforeEach 
-  beforeEach( async () => { 
+  // Hook beforeAll
+  beforeAll ( async () => { 
     browser = await puppeteer.launch({ 
       headless: false,
       defaultViewport: null, // Set default viewport to null
@@ -20,8 +20,8 @@ describe('Helpers de utilidad', () => {
     await page.goto('https://demoqa.com/', { waituntil: 'networkidel0' })
   }, timeDelay)
 
-  // Hook afterEach 
-  afterEach ( async () => { 
+  // Hook afterAll
+  afterAll ( async () => { 
     // Wait for 3 seconds before closing the browser
     await new Promise(resolve => setTimeout(resolve, 4000));
     await browser.close()

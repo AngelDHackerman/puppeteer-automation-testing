@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --forceExit",
-    "TC1-TextBox": "jest ./__test__/01_Text-Box-Testing/*.test.js --runInBand"
+    "TC1-TextBox": "jest ./__test__/01_Text-Box/*.test.js --runInBand",
+    "TC2-TextBox": "jest ./__test__/02_Check-Box/*.test.js --runInBand"
   },
   "author": "",
   "license": "ISC",
