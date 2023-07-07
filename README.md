@@ -6,7 +6,7 @@ each links contains the __test cases__, __purpuse of the testing__, __steps to f
 In order to see the the full details of each page tested, click on the links listed below.
 Or if you want to see the code used for the automation test, click on the directory that has the name of the page you want to check. 
 
-[DemoQa](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/01_DemoQa) <--- __Click Here To See Test Cases And Code__
+[DemoQa](https://github.com/AngelDHackerman/puppeteer-automation-testing/tree/master/01_DemoQa) ⬅️ __Click Here To See Test Cases And Code__
 
 <!-- [Madison Demo-store](https://www.notion.so/Madison-Demo-store-24706e51f4784165956dec4ceb31c5b0?pvs=21) -->
 

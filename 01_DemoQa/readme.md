@@ -144,6 +144,9 @@
   <details>
     <summary><h3> Test Case 2: Check Box</h3></summary>
 
+<details>
+  <summary><h4>01 Happy Path Testing</h4></summary>
+
   **Test Objective:** Verify that the checkboxes can be selected and unselected, and that the correct output is displayed when a checkbox is selected.
 
   **Steps to Follow (Manual Testing):**
@@ -171,6 +174,41 @@
   ![unselecting the files](./images/TestCase2CheckBox/06_unselecting.PNG)
 
   ![collapsing all directories](./images/TestCase2CheckBox/07_collapsing.PNG)
+  </details>
+
+<details>
+  <summary><h4>Negative Test Case: Try to deselect a checkbox that is already deselected</h4></summary>
+
+**Test Objective:** Verify that trying to deselect a checkbox that is already deselected does not change the state of the checkbox or the output displayed.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/checkbox in a browser.
+2. Click on the toggle on the left of the directory “Home”; Desktop, Documents, Downloads should be displayed now.
+3. Click on the left toggles of each of those new directories, under Documents 2 new directories should be shown now: WorkSpace & Office.
+4. Click on the left toggle of those directories: WorkSpace & Office.
+5. Find a checkbox that is not selected and try to deselect it by clicking on it.
+**Expected Outcome:** The checkbox should remain deselected and the output displayed should not change.
+
+</details>
+
+<details>
+  <summary><h4>Edge Test Case: Reload the page while some checkboxes are selected</h4></summary>
+
+**Test Objective:** Verify that the checkboxes maintain their state after a page reload.
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/checkbox in a browser.
+2. Click on the toggle on the left of the directory “Home”; Desktop, Documents, Downloads should be displayed now.
+3. Click on the left toggles of each of those new directories, under Documents 2 new directories should be shown now: WorkSpace & Office.
+4. Click on the left toggle of those directories: WorkSpace & Office.
+5. Now select some of the files by clicking on their checkboxes.
+6. After selecting some files, reload the page.
+7. After the page reloads, check if the checkboxes that were selected before the reload are still selected.
+
+**Expected Outcome:** The checkboxes that were selected before the page reload should still be selected after the page reloads.
+</details>
   </details>
 
 
