@@ -32,7 +32,9 @@ describe('Testing the CheckBox', () => {
 
     // await page.waitForSelector('#tree-node-home')
 
-    await click(page, '#tree-node > ol > li > span > label > span.rct-checkbox') // this is the span label. 
+    await click(page, '#tree-node > ol > li > span > label > span.rct-checkbox') // this is the span tag. 
+    await page.waitForTimeout(1000); // Wait for 1 second
+    await click(page, '#tree-node > ol > li > span > button') // this is a button tag
 
 
   }, timeDelay);
