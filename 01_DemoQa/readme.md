@@ -202,6 +202,10 @@
 
 ![after refresh page](./images/TestCase2CheckBox/EdgeTC/04_after-refresh.png)
 </details>
+
+<details>
+<summary><h4>Negative case, half selected options, and when clicking on the select option of home, all the options has to be selected (completing the missing selections) </h4></summary>
+</details>
   </details>
 
 --- 
