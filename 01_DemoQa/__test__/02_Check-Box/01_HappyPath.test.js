@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const {click, clickDelayed} = require('../../libs/helpers')
+const {click, clickDelayed, getText} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 let browser 
 let page 
@@ -31,7 +31,6 @@ describe('Testing the CheckBox', () => {
   
   // Following the happy path test case: 
   it ('Opening all the toggle options', async () => { 
-    
     // clicking the toggle home 
     await clickDelayed(page, '#tree-node > ol > li > span > button') 
     
@@ -50,7 +49,6 @@ describe('Testing the CheckBox', () => {
 
 
   it ('Clicking the select button on each select option', async () => {
-
     // Selecting the WorkSpace options
     // React
     await clickDelayed(page, '#tree-node > ol > li > ol > li:nth-child(2) > ol > li:nth-child(1) > ol > li:nth-child(1) > span > label > span.rct-checkbox')
@@ -80,6 +78,19 @@ describe('Testing the CheckBox', () => {
     await clickDelayed(page, '#tree-node > ol > li > ol > li:nth-child(3) > ol > li:nth-child(1) > span > label > span.rct-checkbox')
     // Excel File.doc
     await clickDelayed(page, '#tree-node > ol > li > ol > li:nth-child(3) > ol > li:nth-child(2) > span > label > span.rct-checkbox')
+  }, timeDelay);
+
+
+  it('Validation of the bottom message', async () => { 
+
+  const expectedTexts = ['home', 'desktop', 'notes', 'commands', 'documents', 'workspace', 'react', 'angular', 'veu', 'office', 'public', 'private', 'classified', 'general', 'downloads', 'wordFile', 'excelFile'];
+
+  for (let i = 0; i < expectedTexts.length; i++) {
+    const selector = `#result > span:nth-child(${i + 2})`;  // +2 because the first span is 'You have selected'
+    const text = await getText(page, selector);
+    expect(text).toBe(expectedTexts[i]);
+  }
+
   }, timeDelay)
 
-}, timeDelay)
+});
