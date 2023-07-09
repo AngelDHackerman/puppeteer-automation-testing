@@ -13,6 +13,17 @@ module.exports = {
     }
   },
 
+  // clickDelayed
+  clickDelayed: async function (page, selector, delay = 750) {
+    try {
+      await page.waitForSelector(selector);
+      await page.click(selector);
+      await page.waitForTimeout(delay);  // Add delay after click
+    } catch (err) {
+      throw new Error(`Error clicking on the selector: ${selector}`);
+    }
+  },  
+
   // Creating doubleClick helper
   doubleClick: async function ( page, selector) { 
     try { 
@@ -55,5 +66,6 @@ module.exports = {
     } catch (err) { 
       throw new Error(`Error counting elements with the selector: ${selector}`)
     }
-  }
+  },
+
 }
