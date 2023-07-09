@@ -169,6 +169,8 @@
 
   ![showing subfiles](./images/TestCase2CheckBox/04_subfiles.PNG)
 
+  **Selecting all files and directories one by one:**
+
   ![selecting all the files](./images/TestCase2CheckBox/05_selecting.PNG)
 
   ![unselecting the files](./images/TestCase2CheckBox/06_unselecting.PNG)

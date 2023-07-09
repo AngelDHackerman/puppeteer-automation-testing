@@ -28,19 +28,35 @@ describe('Testing the CheckBox', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Following the happy path selecting and unselecting the checkbox', async () => { 
 
-    // await page.waitForSelector('#tree-node-home')
+  // Following the happy path test case: 
+  it ('Opening all the toggle options', async () => { 
+    const awaitHalfSecond = () => page.waitForTimeout(750); // Wait for 0.5 second
+    
+    // clicking the toggle home 
+    await click(page, '#tree-node > ol > li > span > button') 
+    await awaitHalfSecond()
 
-    await click(page, '#tree-node > ol > li > span > label > span.rct-checkbox') // this is the span tag. 
-    await page.waitForTimeout(1000); // Wait for 1 second
-    await click(page, '#tree-node > ol > li > span > button') // this is a button tag
-
-
+    // Clicking the toggle for:
+    // Desktop
+    await click(page, '#tree-node > ol > li > ol > li:nth-child(1) > span > button') 
+    await awaitHalfSecond()
+    // Documents
+    await click(page, '#tree-node > ol > li > ol > li:nth-child(2) > span > button') 
+    await awaitHalfSecond()
+    // Downloads
+    await click(page, '#tree-node > ol > li > ol > li:nth-child(3) > span > button') 
+    await awaitHalfSecond()
+    // WorkSpace
+    await click(page, '#tree-node > ol > li > ol > li:nth-child(2) > ol > li:nth-child(1) > span > button') 
+    await awaitHalfSecond()
+    // Office
+    await click(page, '#tree-node > ol > li > ol > li:nth-child(2) > ol > li:nth-child(2) > span > button') 
+    await awaitHalfSecond()
   }, timeDelay);
 
-  // it ('Edge test case, Refreshing the web page while some checkbox are selected', async () => { 
+  it ('Clicking the select button on each select option', async () => {
+    
+  })
 
-
-  // }, timeDelay);
 }, timeDelay)
