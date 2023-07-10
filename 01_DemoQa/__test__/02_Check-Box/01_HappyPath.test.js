@@ -91,6 +91,21 @@ describe('Testing the CheckBox', () => {
     expect(text).toBe(expectedTexts[i]);
   }
 
-  }, timeDelay)
+  }, timeDelay);
 
+  it('Unselecting all the files and directories and hidding them', async () => { 
+    await clickDelayed(page, '#tree-node > ol > li > span > label > span.rct-checkbox')  // Unselecting all
+    await clickDelayed(page, '#tree-node > ol > li > span > label > span.rct-checkbox')  // Selecting all the files
+    await clickDelayed(page, '#tree-node > ol > li > span > label > span.rct-checkbox')  // Unselecting all again
+
+    // Wainting time 
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    // Clicking the toggle, hiding all elements. 
+    await click(page, '#tree-node > ol > li > span > button')
+
+  }, timeDelay)
 });
+
+// 6. click on the select home, all directories should be now unselected
+// 7. click on the toggle 
