@@ -107,5 +107,4 @@ describe('Testing the CheckBox', () => {
   }, timeDelay)
 });
 
-// 6. click on the select home, all directories should be now unselected
-// 7. click on the toggle 
+
