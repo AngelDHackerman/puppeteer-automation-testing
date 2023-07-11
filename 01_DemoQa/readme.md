@@ -217,6 +217,14 @@
 5. Unselect the select button of the "Home" directory, now unselecting all the files and directories
 
 **Expected Outcome:** When the select button of the "Home" directory is selected all the options should be marked, and when that button is unselected, all the options should be unselected. 
+
+![maing page](./images/TestCase2CheckBox/NegativeCase/01_main.png)
+
+![directories](./images/TestCase2CheckBox/NegativeCase/02_halfSelected.png)
+
+![selecting directories](./images/TestCase2CheckBox/NegativeCase/03_allSelected.png)
+
+![unselecting](./images/TestCase2CheckBox/NegativeCase/04_allUnselected.png)
 </details>
   </details>
 
