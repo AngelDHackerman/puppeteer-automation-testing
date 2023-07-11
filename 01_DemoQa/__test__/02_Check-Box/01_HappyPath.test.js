@@ -31,9 +31,9 @@ describe('Testing the CheckBox', () => {
   
   // Following the happy path test case: 
   it ('Opening all the toggle options', async () => { 
+    
     // clicking the toggle home 
     await clickDelayed(page, '#tree-node > ol > li > span > button') 
-    
     // Clicking the toggle for:
     // Desktop
     await clickDelayed(page, '#tree-node > ol > li > ol > li:nth-child(1) > span > button') 
