@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const {click, type, getText} = require('../../libs/helpers')
 const timeDelay = 17_000_000
+const afterAllDelay = 4_000
 let browser 
 let page 
 
@@ -23,7 +24,7 @@ describe('Helpers de utilidad', () => {
   // Hook afterAll
   afterAll ( async () => { 
     // Wait for 3 seconds before closing the browser
-    await new Promise(resolve => setTimeout(resolve, 4000));
+    await new Promise(resolve => setTimeout(resolve, afterAllDelay));
     await browser.close()
   }, timeDelay); 
 
