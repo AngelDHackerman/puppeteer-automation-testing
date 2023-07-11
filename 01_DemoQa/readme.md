@@ -244,6 +244,7 @@
   5. Click on a radio button “Impressive”.
   6. Verify that the radio button is selected.
   7. Verify that the correct output is displayed below the radio buttons.
+  8. Verify that "No" option is disabled. 
 
   **Expected Outcome:** After clicking on a radio button, it should be selected and the correct output should be displayed below the radio buttons. If another radio button is clicked, it should become selected and the previous one should be deselected, and the output should be updated accordingly.
 
