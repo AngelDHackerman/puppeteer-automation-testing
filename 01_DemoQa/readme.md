@@ -204,7 +204,19 @@
 </details>
 
 <details>
-<summary><h4>Negative case, half selected options, and when clicking on the select option of home, all the options has to be selected (completing the missing selections) </h4></summary>
+<summary><h4>Negative case, completing the missing selections</h4></summary>
+
+**Test Objective:** Verify that check all button works when some of the sections are selected. 
+
+**Steps to Follow (Manual Testing):**
+
+1. Open the webpage https://demoqa.com/checkbox in a browser.
+2. Click on the toggle on the left of the directory “Home”; Desktop, Documents, Downloads should be displayed now, click on the toggle of them as well.
+3. Select just some of the directories, not all of them. e.g: Commands, Angular, Classified and Excel file.doc
+4. Click on the select button of the "Home" directory, selecting all the files and directories
+5. Unselect the select button of the "Home" directory, now unselecting all the files and directories
+
+**Expected Outcome:** When the select button of the "Home" directory is selected all the options should be marked, and when that button is unselected, all the options should be unselected. 
 </details>
   </details>
 
