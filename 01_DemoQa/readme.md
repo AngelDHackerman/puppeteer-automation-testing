@@ -272,7 +272,6 @@
   3. Click on the button “Delete” in the "Action" column for the first row (Cierra Vega) and verify that the row is removed. 
   4. Click on the button “Edit” in the "Action" column for the new first row (Kierra Gentry) and change the name to “Katrina” and her age is now “19”, click on submit button. Name has to be changed now to katrina with 19 years old
   5. Click on the “Add” button, fill out the first and last name with “Angel Hackerman”, email: angelhackerman@test.com, Age 27, salary 4000, department IT. Click on submit. A new row has to be created 
-  6. In the input “type to search” type “Angel” and the new row created has to be displayed, make sure the first column if for “Angel Hackerman” 
 
   **Expected Outcome:** The table should display the correct data and the buttons in the "Action" column should function as expected. If there is an "Add" button, it should allow you to add a new row to the table, also we should be able to delete and edit the columns of the table. 
 
@@ -290,7 +289,6 @@
 
   ![Added](./images/TestCase4WebTables/07_added.PNG)
 
-  ![Using search barr](./images/TestCase4WebTables/08_searching.PNG)
 </details>
 
 <details>
@@ -306,6 +304,11 @@
 
 1. change the default rows from 10 to 5 then to 20, to 25 to 50 to 100. 
 2. Validate that page is shown the same number of rows as the rows selected in the dropdown menu. 
+</details>
+
+<details>
+<summary><h4>Using the search bar</h4></summary>
+
 </details>
 
 <details>
