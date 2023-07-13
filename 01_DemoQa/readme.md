@@ -261,7 +261,7 @@
     <summary><h3>Test Case 4: Web Tables</h3></summary>
 
 <details>
-<summary><h3>Happy Path, testing all the web table</h3></summary>
+<summary><h4>Happy Path, testing all the web table</h4></summary>
 
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
@@ -294,7 +294,7 @@
 </details>
 
 <details>
-<summary><h3>Testing the Previous and Next button</h3></summary>
+<summary><h4>Testing the Previous and Next button</h4></summary>
 
 1. need to change the row to 5 rows
 2. add data in order to create at least 20 rows with information
@@ -302,13 +302,13 @@
 </details>
 
 <details>
-<summary><h3>Checking rows shown in the web table</h3></summary>
+<summary><h4>Checking rows shown in the web table</h4></summary>
 
 1. change the default rows from 10 to 5 then to 20, to 25 to 50 to 100. 
 2. Validate that page is shown the same number of rows as the rows selected in the dropdown menu. 
 </details>
 <details>
-<summary><h3>Negative Case: Adding the worng values in the Registration Form</h3></summary>
+<summary><h4>Negative Case: Adding the worng values in the Registration Form</h4></summary>
 
 First Name
 666
@@ -326,6 +326,7 @@ Department
 
   </details>
 
+--- 
 
   <details>
     <summary><h3>Test Case 5: Buttons</h3></summary>
