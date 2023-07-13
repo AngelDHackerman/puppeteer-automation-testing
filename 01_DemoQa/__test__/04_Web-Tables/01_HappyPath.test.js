@@ -1,11 +1,12 @@
 const puppeteer = require('puppeteer');
-const {click, type, getText} = require('../../libs/helpers')
+const {click, type, getText, clickDelayed, clearInput} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 const afterAllDelay = 4_000
+let typeDelay = { delay: 100}
 let browser 
 let page 
 
-describe('Web Tables', () => { 
+describe('Web Tables Happy Path: adding, searching and removing information', () => { 
 
   // Hook beforeAll
   beforeAll ( async () => { 
@@ -29,7 +30,19 @@ describe('Web Tables', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Check that inputs can be fill out', async () => { 
+  it ('Happy path', async () => { 
+
+    // Removing first row 
+    await clickDelayed(page, '#delete-record-1')
+    // Editing "last" row
+    await clickDelayed(page, '#edit-record-3')
+    // Changing name
+    await clearInput(page, '#firstName')
+    await type(page, '#firstName', 'Katrina', typeDelay)
+    // Changing age
+    await clearInput(page, '#age')
+    await type(page, '#age', '19', typeDelay)
+
 
 
   }, timeDelay);

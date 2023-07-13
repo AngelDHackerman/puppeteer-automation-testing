@@ -68,4 +68,15 @@ module.exports = {
     }
   },
 
+  clearInput: async function (page, selector) {
+    try {
+      await page.waitForSelector(selector);
+      await page.evaluate((sel) => {
+        document.querySelector(sel).value = "";
+      }, selector);
+    } catch (err) {
+      throw new Error(`Error clearing the input field: ${selector}`);
+    }
+  },
+
 }
