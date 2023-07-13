@@ -339,7 +339,7 @@ Department
 
 </details>
 
-  </details>
+
 
 
 --- 
@@ -401,6 +401,8 @@ Department
   ![Forbidden 403 status](./images/TestCase6Links/09_forbidden403.PNG)
 
   ![Not found 404 status](./images/TestCase6Links/10_notfound404.PNG)
+  </details>
+
   </details>
 </details>
 
