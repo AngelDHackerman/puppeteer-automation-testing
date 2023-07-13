@@ -3,7 +3,7 @@
 > In this case we are about to **test several features** of the DemoQa page using **puppeteer**, features such as the elemets, forms, alerts, accordians and so many more.
 **Object Under Test:** [https://demoqa.com/](https://demoqa.com/)
 
-- Want to see the code? Click on the \_\_test\_\_ directory. 
+- Want to see the code? Click on the **\_\_test\_\_** directory. 
 - Want to see a video about how the automated test cases works? __Click here__ 
 - If you want to read the test cases and check out the screenshots keep scrolling down 👇
 
@@ -260,6 +260,9 @@
   <details>
     <summary><h3>Test Case 4: Web Tables</h3></summary>
 
+<details>
+<summary><h3>Happy Path, testing all the web table</h3></summary>
+
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
   **Steps to Follow (Manual Testing):**
@@ -288,6 +291,39 @@
   ![Added](./images/TestCase4WebTables/07_added.PNG)
 
   ![Using search barr](./images/TestCase4WebTables/08_searching.PNG)
+</details>
+
+<details>
+<summary><h3>Testing the Previous and Next button</h3></summary>
+
+1. need to change the row to 5 rows
+2. add data in order to create at least 20 rows with information
+3. use the input "page" for change the page shown in screen. 
+</details>
+
+<details>
+<summary><h3>Checking rows shown in the web table</h3></summary>
+
+1. change the default rows from 10 to 5 then to 20, to 25 to 50 to 100. 
+2. Validate that page is shown the same number of rows as the rows selected in the dropdown menu. 
+</details>
+<details>
+<summary><h3>Negative Case: Adding the worng values in the Registration Form</h3></summary>
+
+First Name
+666
+Last Name
+999
+Email
+angel.net.com
+Age
+ab
+Salary
+abcd
+Department
+233
+</details>
+
   </details>
 
 
