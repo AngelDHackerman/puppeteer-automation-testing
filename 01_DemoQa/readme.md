@@ -331,6 +331,13 @@ Department
 </details>
 
   </details>
+<details>
+<summary><h4>Edge case: Closing the "Registration From" when information is added</h4></summary>
+
+</details>
+
+  </details>
+
 
 --- 
 
