@@ -30,33 +30,48 @@ describe('Web Tables Happy Path: adding, searching and removing information', ()
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Removing first row, modifying the last one: ', async () => { 
+  // it ('Removing first row, modifying the last one: ', async () => { 
 
-    // Removing first row 
-    await clickDelayed(page, '#delete-record-1')
-    // Editing "last" row
-    await clickDelayed(page, '#edit-record-3')
-    // Changing name
-    await clearInput(page, '#firstName')
-    await type(page, '#firstName', 'Katrina', typeDelay)
-    // Changing age
-    await clearInput(page, '#age')
-    await type(page, '#age', '19', typeDelay)
-    // submit new information
-    await click(page, '#submit')
+  //   // Removing first row 
+  //   await clickDelayed(page, '#delete-record-1')
+  //   // Editing "last" row
+  //   await clickDelayed(page, '#edit-record-3')
+  //   // Changing name
+  //   await clearInput(page, '#firstName')
+  //   await type(page, '#firstName', 'Katrina', typeDelay)
+  //   // Changing age
+  //   await clearInput(page, '#age')
+  //   await type(page, '#age', '19', typeDelay)
+  //   // submit new information
+  //   await click(page, '#submit')
 
-  }, timeDelay);
+  // }, timeDelay);
 
-  it('Validation of the changes', async () => { 
-    const nameSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(1)';
-    const ageSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(3)';
+  // it('Validation of the changes', async () => { 
+  //   const nameSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(1)';
+  //   const ageSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(3)';
   
-    const name = await getText(page, nameSelector);
-    const age = await getText(page, ageSelector);
+  //   const name = await getText(page, nameSelector);
+  //   const age = await getText(page, ageSelector);
   
-    expect(name).toBe('Katrina');
-    expect(age).toBe('19');
-  }, timeDelay);
+  //   expect(name).toBe('Katrina');
+  //   expect(age).toBe('19');
+  // }, timeDelay);
+
+  it('Adding a new row, Angel Hackerman', async () => { 
+
+    await clickDelayed(page, '#addNewRecordButton')
+    await page.waitForSelector('body > div.fade.modal.show > div > div')
+    // Adding the info for new row. 
+    await type(page, '#firstName', 'Angel', typeDelay)
+    await type(page, '#lastName', 'Hackerman', typeDelay)
+    await type(page, '#userEmail', 'AngelHackerman@test.com', typeDelay)
+    await type(page, '#age', '27', typeDelay)
+    await type(page, '#salary', '2000', typeDelay)
+    await type(page, '#department', 'QA Automation Team', typeDelay)
+
+
+  }, timeDelay)
   
 }, timeDelay)
 

@@ -307,6 +307,7 @@
 1. change the default rows from 10 to 5 then to 20, to 25 to 50 to 100. 
 2. Validate that page is shown the same number of rows as the rows selected in the dropdown menu. 
 </details>
+
 <details>
 <summary><h4>Negative Case: Adding the worng values in the Registration Form</h4></summary>
 
@@ -322,6 +323,11 @@ Salary
 abcd
 Department
 233
+</details>
+
+<details>
+<summary><h4>Negative case: Testing the lenght of character per input</h4></summary>
+
 </details>
 
   </details>
