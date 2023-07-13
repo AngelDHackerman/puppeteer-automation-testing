@@ -30,7 +30,7 @@ describe('Web Tables Happy Path: adding, searching and removing information', ()
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Happy path', async () => { 
+  it ('Removing first row, modifying the last one: ', async () => { 
 
     // Removing first row 
     await clickDelayed(page, '#delete-record-1')
@@ -42,8 +42,21 @@ describe('Web Tables Happy Path: adding, searching and removing information', ()
     // Changing age
     await clearInput(page, '#age')
     await type(page, '#age', '19', typeDelay)
-
-
+    // submit new information
+    await click(page, '#submit')
 
   }, timeDelay);
+
+  it('Validation of the changes', async () => { 
+    const nameSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(1)';
+    const ageSelector = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(2) > div > div:nth-child(3)';
+  
+    const name = await getText(page, nameSelector);
+    const age = await getText(page, ageSelector);
+  
+    expect(name).toBe('Katrina');
+    expect(age).toBe('19');
+  }, timeDelay);
+  
 }, timeDelay)
+
