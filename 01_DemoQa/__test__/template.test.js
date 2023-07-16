@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer');
 const {click, type, getText} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 const afterAllDelay = 4_000
+let typeDelay = { delay: 100}
 let browser 
 let page 
 
