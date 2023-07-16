@@ -150,5 +150,13 @@ module.exports = [
 		age: "26",
 		salary: "4927",
 		department: "Tech Support",
-	}
+	},
+  {
+		firstName: "Carlos",
+		lastName: "Oliver",
+		email: "CarlosOliver@testing.com",
+		age: "29",
+		salary: "3927",
+		department: "Client Support",
+	},
 ]
