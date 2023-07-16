@@ -158,5 +158,5 @@ module.exports = [
 		age: "29",
 		salary: "3927",
 		department: "Client Support",
-	},
+	}
 ]

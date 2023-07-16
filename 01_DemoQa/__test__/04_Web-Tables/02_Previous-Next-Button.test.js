@@ -49,6 +49,13 @@ describe('Previous And Next Buttons', () => {
       await click(page, '#submit')
       await page.waitForTimeout(250)
     }
-
   }, timeDelay);
+
+  it ('Changing the displayed rows', async () => { 
+
+    await page.waitForSelector('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions')
+
+    // Changin the displayed rows to 5: 
+    await page.select('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select', '5');
+  })
 }, timeDelay)
