@@ -6,9 +6,15 @@ let typeDelay = { delay: 10}
 let browser 
 let page 
 
-
 // Import the data from the file
 const dataUsers = require('./Data_Users.js');
+
+// Validating the page shown function: 
+async function validatePageShown(page, expectedPage) {
+  let inputValue = await page.$eval('input[aria-label="jump to page"]', el => el.value);
+  expect(inputValue).toBe(expectedPage);
+}
+
 
 describe('Previous And Next Buttons', () => { 
 
@@ -34,46 +40,60 @@ describe('Previous And Next Buttons', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  // it ('Adding data to table, Step: 1 - 2', async () => { 
-  //   let addingModal = 'body > div.fade.modal.show > div > div'
+  it ('Adding data users to the table', async () => { 
+    let addingModal = 'body > div.fade.modal.show > div > div'
 
-  //   for (let user of dataUsers) {
-  //     await clickDelayed(page, '#addNewRecordButton')
-  //     await page.waitForSelector(addingModal)
+    for (let user of dataUsers) {
+      await clickDelayed(page, '#addNewRecordButton')
+      await page.waitForSelector(addingModal)
 
-  //     // Adding the info for new row. 
-  //     await type(page, '#firstName', user.firstName, typeDelay)
-  //     await type(page, '#lastName', user.lastName, typeDelay)
-  //     await type(page, '#userEmail', user.email, typeDelay)
-  //     await type(page, '#age', user.age, typeDelay)
-  //     await type(page, '#salary', user.salary, typeDelay)
-  //     await type(page, '#department', user.department, typeDelay)
-  //     await click(page, '#submit')
-  //     await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
-  //   }
-  // }, timeDelay);
+      // Adding the info for new row. 
+      await type(page, '#firstName', user.firstName, typeDelay)
+      await type(page, '#lastName', user.lastName, typeDelay)
+      await type(page, '#userEmail', user.email, typeDelay)
+      await type(page, '#age', user.age, typeDelay)
+      await type(page, '#salary', user.salary, typeDelay)
+      await type(page, '#department', user.department, typeDelay)
+      await click(page, '#submit')
+      await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+    }
+  }, timeDelay);
 
-  it ('Changing the displayed rows, Step: 3 - 5', async () => { 
+  it ('Changing the displayed rows to only 5', async () => { 
     let dropDownMenu = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select'
 
     await page.waitForSelector(dropDownMenu)
 
     // Changin the displayed rows to 5: 
     await page.select(dropDownMenu, '5');
+    await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+  }, timeDelay)
 
+  it ('Validating there is only 5 elements per table', async () => { 
     // Verify that there are only 5 items per page
     let classRows = '.rt-tr-group[role="rowgroup"]';
     const rowCount = await getCount(page, classRows);
     expect(rowCount).toBe(5);
-    await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+  })
 
+  it ( 'Validating the N. of the page shown', async () => { 
+    await validatePageShown(page, '1')
   }, timeDelay)
-
-  it ( 'Validating the page shown', async () => { 
-    let inputValue = await page.$eval('input[aria-label="jump to page"]', el => el.value);
-
-    expect(inputValue).toBe("1")
-  }, timeDelay)
+  
+  it ('Moving forward into the new table pages, through all the table pages', async () => {
+    // Get the total number of pages
+    let totalPagesText = await getText(page, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.-pageInfo > span');
+    let totalPages = parseInt(totalPagesText);
+    console.log(`Total number of pages found was ${totalPages}`)
+  
+    // Iterate through all pages
+    for (let i = 1; i <= totalPages; i++) {
+      // Verify that we are on the correct page
+      await validatePageShown(page, i.toString());
+      // Click the "Next" button
+      await clickDelayed(page, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button');
+    }
+  }, timeDelay);
   
   
   
