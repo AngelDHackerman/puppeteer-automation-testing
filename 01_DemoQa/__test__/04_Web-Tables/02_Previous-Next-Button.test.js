@@ -6,6 +6,7 @@ let typeDelay = { delay: 10}
 let browser 
 let page 
 
+
 // Import the data from the file
 const dataUsers = require('./Data_Users.js');
 
@@ -56,11 +57,13 @@ describe('Previous And Next Buttons', () => {
     await page.waitForSelector('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions')
 
     // Changin the displayed rows to 5: 
-    await page.select('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select', '5');
+    let dropDownMenu = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select'
+    await page.select(dropDownMenu, '5');
 
     // Verify that there are only 5 items per page
-    const rowCount = await getCount(page, '.rt-tr-group[role="rowgroup"]');
-expect(rowCount).toBe(5);
+    let classRows = '.rt-tr-group[role="rowgroup"]';
+    const rowCount = await getCount(page, classRows);
+    expect(rowCount).toBe(5);
 
   }, timeDelay)
 
