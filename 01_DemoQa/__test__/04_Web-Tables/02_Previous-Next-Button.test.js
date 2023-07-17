@@ -34,30 +34,31 @@ describe('Previous And Next Buttons', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  // it ('Adding data to table, Step: 1 - 2', async () => { 
+  it ('Adding data to table, Step: 1 - 2', async () => { 
+    let addingModal = 'body > div.fade.modal.show > div > div'
 
-  //   for (let user of dataUsers) {
-  //     await clickDelayed(page, '#addNewRecordButton')
-  //     await page.waitForSelector('body > div.fade.modal.show > div > div')
-  //     // Adding the info for new row. 
-  //     await type(page, '#firstName', user.firstName, typeDelay)
-  //     await type(page, '#lastName', user.lastName, typeDelay)
-  //     await type(page, '#userEmail', user.email, typeDelay)
-  //     await type(page, '#age', user.age, typeDelay)
-  //     await type(page, '#salary', user.salary, typeDelay)
-  //     await type(page, '#department', user.department, typeDelay)
+    for (let user of dataUsers) {
+      await clickDelayed(page, '#addNewRecordButton')
+      await page.waitForSelector(addingModal)
 
-  //     await click(page, '#submit')
-  //     await page.waitForTimeout(250)
-  //   }
-  // }, timeDelay);
+      // Adding the info for new row. 
+      await type(page, '#firstName', user.firstName, typeDelay)
+      await type(page, '#lastName', user.lastName, typeDelay)
+      await type(page, '#userEmail', user.email, typeDelay)
+      await type(page, '#age', user.age, typeDelay)
+      await type(page, '#salary', user.salary, typeDelay)
+      await type(page, '#department', user.department, typeDelay)
+      await click(page, '#submit')
+      await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+    }
+  }, timeDelay);
 
   it ('Changing the displayed rows, Step: 3 - 5', async () => { 
+    let dropDownMenu = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select'
 
-    await page.waitForSelector('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions')
+    await page.waitForSelector(dropDownMenu)
 
     // Changin the displayed rows to 5: 
-    let dropDownMenu = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select'
     await page.select(dropDownMenu, '5');
 
     // Verify that there are only 5 items per page
@@ -73,5 +74,4 @@ describe('Previous And Next Buttons', () => {
   // }, timeDelay)
 }, timeDelay)
 
-// #app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight
 
