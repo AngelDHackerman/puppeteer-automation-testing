@@ -301,8 +301,8 @@
 **Steps to Follow (Manual Testing):**
 
 1. Open the webpage https://demoqa.com/webtables in a browser.
-2. Change the row display to 5 rows using the dropdown menu at the top left of the table.
-3. Click on the “Add” button, fill out the first and last name with any data, email, age, salary, and department. Click on submit. Repeat this step until you have at least 20 rows with information.
+2. Click on the “Add” button, fill out the first and last name with any data, email, age, salary, and department. Click on submit. Repeat this step until you have at least 20 rows with information.
+3. Change the row display to 5 rows using the dropdown menu at the bottom of the table.
 4. Verify that the table is displayed with the correct data and that only 5 rows are displayed per page.
 5. At the bottom of the table, verify that the page number is displayed correctly (should be "1").
 6. Click on the "Next" button and verify that the table now displays the next 5 rows and that the page number has increased by 1.

@@ -101,4 +101,3 @@ describe('Web Tables Happy Path: adding, searching and removing information', ()
   }, timeDelay);
   
 }, timeDelay)
-

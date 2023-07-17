@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const {click, type, getText, clickDelayed} = require('../../libs/helpers')
+const {click, type, getCount, clickDelayed} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 const afterAllDelay = 4_000
 let typeDelay = { delay: 10}
@@ -33,29 +33,42 @@ describe('Previous And Next Buttons', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Adding data and changing row display', async () => { 
+  // it ('Adding data to table, Step: 1 - 2', async () => { 
 
-    for (let user of dataUsers) {
-      await clickDelayed(page, '#addNewRecordButton')
-      await page.waitForSelector('body > div.fade.modal.show > div > div')
-      // Adding the info for new row. 
-      await type(page, '#firstName', user.firstName, typeDelay)
-      await type(page, '#lastName', user.lastName, typeDelay)
-      await type(page, '#userEmail', user.email, typeDelay)
-      await type(page, '#age', user.age, typeDelay)
-      await type(page, '#salary', user.salary, typeDelay)
-      await type(page, '#department', user.department, typeDelay)
+  //   for (let user of dataUsers) {
+  //     await clickDelayed(page, '#addNewRecordButton')
+  //     await page.waitForSelector('body > div.fade.modal.show > div > div')
+  //     // Adding the info for new row. 
+  //     await type(page, '#firstName', user.firstName, typeDelay)
+  //     await type(page, '#lastName', user.lastName, typeDelay)
+  //     await type(page, '#userEmail', user.email, typeDelay)
+  //     await type(page, '#age', user.age, typeDelay)
+  //     await type(page, '#salary', user.salary, typeDelay)
+  //     await type(page, '#department', user.department, typeDelay)
 
-      await click(page, '#submit')
-      await page.waitForTimeout(250)
-    }
-  }, timeDelay);
+  //     await click(page, '#submit')
+  //     await page.waitForTimeout(250)
+  //   }
+  // }, timeDelay);
 
-  it ('Changing the displayed rows', async () => { 
+  it ('Changing the displayed rows, Step: 3 - 5', async () => { 
 
     await page.waitForSelector('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions')
 
     // Changin the displayed rows to 5: 
     await page.select('#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select', '5');
-  })
+
+    // Verify that there are only 5 items per page
+    const rowCount = await getCount(page, '.rt-tr-group[role="rowgroup"]');
+expect(rowCount).toBe(5);
+
+  }, timeDelay)
+
+  // it ( 'Step 6 - 8', async () => { 
+
+
+  // }, timeDelay)
 }, timeDelay)
+
+// #app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight
+
