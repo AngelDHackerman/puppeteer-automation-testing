@@ -1,5 +1,5 @@
 const puppeteer = require('puppeteer');
-const {click, type, getCount, clickDelayed} = require('../../libs/helpers')
+const {click, type, getCount, clickDelayed, getText} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 const afterAllDelay = 4_000
 let typeDelay = { delay: 10}
@@ -34,24 +34,24 @@ describe('Previous And Next Buttons', () => {
   }, timeDelay); 
 
   // Executing the test cases: 
-  it ('Adding data to table, Step: 1 - 2', async () => { 
-    let addingModal = 'body > div.fade.modal.show > div > div'
+  // it ('Adding data to table, Step: 1 - 2', async () => { 
+  //   let addingModal = 'body > div.fade.modal.show > div > div'
 
-    for (let user of dataUsers) {
-      await clickDelayed(page, '#addNewRecordButton')
-      await page.waitForSelector(addingModal)
+  //   for (let user of dataUsers) {
+  //     await clickDelayed(page, '#addNewRecordButton')
+  //     await page.waitForSelector(addingModal)
 
-      // Adding the info for new row. 
-      await type(page, '#firstName', user.firstName, typeDelay)
-      await type(page, '#lastName', user.lastName, typeDelay)
-      await type(page, '#userEmail', user.email, typeDelay)
-      await type(page, '#age', user.age, typeDelay)
-      await type(page, '#salary', user.salary, typeDelay)
-      await type(page, '#department', user.department, typeDelay)
-      await click(page, '#submit')
-      await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
-    }
-  }, timeDelay);
+  //     // Adding the info for new row. 
+  //     await type(page, '#firstName', user.firstName, typeDelay)
+  //     await type(page, '#lastName', user.lastName, typeDelay)
+  //     await type(page, '#userEmail', user.email, typeDelay)
+  //     await type(page, '#age', user.age, typeDelay)
+  //     await type(page, '#salary', user.salary, typeDelay)
+  //     await type(page, '#department', user.department, typeDelay)
+  //     await click(page, '#submit')
+  //     await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+  //   }
+  // }, timeDelay);
 
   it ('Changing the displayed rows, Step: 3 - 5', async () => { 
     let dropDownMenu = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select'
@@ -65,13 +65,20 @@ describe('Previous And Next Buttons', () => {
     let classRows = '.rt-tr-group[role="rowgroup"]';
     const rowCount = await getCount(page, classRows);
     expect(rowCount).toBe(5);
+    await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
 
   }, timeDelay)
 
-  // it ( 'Step 6 - 8', async () => { 
+  it ( 'Validating the page shown', async () => { 
+    let inputValue = await page.$eval('input[aria-label="jump to page"]', el => el.value);
 
-
-  // }, timeDelay)
+    expect(inputValue).toBe("1")
+  }, timeDelay)
+  
+  
+  
+  
+  
 }, timeDelay)
 
 

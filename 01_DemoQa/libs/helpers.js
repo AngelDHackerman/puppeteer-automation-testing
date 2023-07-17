@@ -68,6 +68,7 @@ module.exports = {
     }
   },
 
+  // Clear any input in the forms 
   clearInput: async function (page, selector) {
     try {
       await page.waitForSelector(selector);
@@ -78,5 +79,4 @@ module.exports = {
       throw new Error(`Error clearing the input field: ${selector}`);
     }
   },
-
 }
