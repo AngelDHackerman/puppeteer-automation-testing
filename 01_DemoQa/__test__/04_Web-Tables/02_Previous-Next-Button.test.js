@@ -6,6 +6,11 @@ let typeDelay = { delay: 10}
 let browser 
 let page 
 
+// buttons previous and next
+let nextButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button'
+let previousButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-previous > button'
+
+
 // Import the data from the file
 const dataUsers = require('./Data_Users.js');
 
@@ -16,7 +21,7 @@ async function validatePageShown(page, expectedPage) {
 }
 
 
-describe('Previous And Next Buttons', () => { 
+describe('Previous And Next Buttons Autofilling Table', () => { 
 
   // Hook beforeAll
   beforeAll ( async () => { 
@@ -91,14 +96,12 @@ describe('Previous And Next Buttons', () => {
       // Verify that we are on the correct page
       await validatePageShown(page, i.toString());
       // Click the "Next" button
-      let nextButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button'
       await clickDelayed(page, nextButton);
     }
   }, timeDelay)
   
   it('Validating next button is disabled', async () => { 
     // Get the disabled attribute of the button
-    let nextButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button'
     let isDisabled = await page.$eval(nextButton, button => button.disabled);
     console.log(`Button Next is disabled: ${isDisabled}`)
   
@@ -116,20 +119,19 @@ describe('Previous And Next Buttons', () => {
       // Verify that we are on the correct page
       await validatePageShown(page, i.toString());
       // Click the "Next" button
-      let previousButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-previous > button'
       await clickDelayed(page, previousButton);
     }
   }, timeDelay)
 
   it('Validating previous button is disabled', async () => { 
     // Get the disabled attribute of the button
-    let previousButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-previous > button'
     let isDisabled = await page.$eval(previousButton, button => button.disabled);
     console.log(`Previous Button is disabled: ${isDisabled}`)
   
     // Assert that the button is disabled
     expect(isDisabled).toBe(true);
   }, timeDelay)
-}, timeDelay)
 
+  // iniciar el otro describe aqui
+}, timeDelay)
 
