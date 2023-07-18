@@ -95,10 +95,17 @@ describe('Previous And Next Buttons', () => {
     }
   }, timeDelay);
   
+  it('Validating next button is disabled', async () => { 
+    // Get the disabled attribute of the button
+    let nextButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button'
+    let isDisabled = await page.$eval(nextButton, button => button.disabled);
+    console.log(`Button Next is disabled: ${isDisabled}`)
   
+    // Assert that the button is disabled
+    expect(isDisabled).toBe(true);
+  }, timeDelay)
   
-  
-  
+
 }, timeDelay)
 
 
