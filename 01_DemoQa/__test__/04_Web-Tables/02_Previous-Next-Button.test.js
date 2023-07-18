@@ -91,9 +91,10 @@ describe('Previous And Next Buttons', () => {
       // Verify that we are on the correct page
       await validatePageShown(page, i.toString());
       // Click the "Next" button
-      await clickDelayed(page, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button');
+      let nextButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-next > button'
+      await clickDelayed(page, nextButton);
     }
-  }, timeDelay);
+  }, timeDelay)
   
   it('Validating next button is disabled', async () => { 
     // Get the disabled attribute of the button
@@ -105,7 +106,30 @@ describe('Previous And Next Buttons', () => {
     expect(isDisabled).toBe(true);
   }, timeDelay)
   
+  it ('Moving backwards into the table pages, using the previous button', async () => {
+    // Getting total pages
+    let totalPagesText = await getText(page, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.-pageInfo > span');
+    let totalPages = parseInt(totalPagesText);
+  
+    // Iterate through all pages backwards 
+    for (let i = totalPages; i >= 1; i--) {
+      // Verify that we are on the correct page
+      await validatePageShown(page, i.toString());
+      // Click the "Next" button
+      let previousButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-previous > button'
+      await clickDelayed(page, previousButton);
+    }
+  }, timeDelay)
 
+  it('Validating previous button is disabled', async () => { 
+    // Get the disabled attribute of the button
+    let previousButton = '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-previous > button'
+    let isDisabled = await page.$eval(previousButton, button => button.disabled);
+    console.log(`Previous Button is disabled: ${isDisabled}`)
+  
+    // Assert that the button is disabled
+    expect(isDisabled).toBe(true);
+  }, timeDelay)
 }, timeDelay)
 
 

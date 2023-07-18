@@ -311,7 +311,6 @@
 9. Click on the "Previous" button and verify that the table now displays the previous 5 rows and that the page number has decreased by 1.
 10. Repeat step 9 until you reach the first page of the table.
 11. Verify that the "Previous" button is now disabled.
-12. Use the "Page" input to change the page shown on the screen. Verify that the table displays the correct rows and that the page number is displayed correctly.
 
 **Expected Outcome:** The "Previous" and "Next" buttons should allow the user to navigate through the different pages of the table. The "Page" input should allow the user to jump to a specific page. The table should always display the correct rows for the current page, and the page number should always be displayed correctly. The "Previous" button should be disabled when the user is on the first page, and the "Next" button should be disabled when the user is on the last page.
 </details>
