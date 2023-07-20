@@ -1,5 +1,13 @@
 const puppeteer = require('puppeteer');
-const {click, type, getCount, clickDelayed, getText} = require('../../libs/helpers')
+const {
+  click, 
+  type, 
+  getCount, 
+  clickDelayed, 
+  getText, 
+  screenshot,
+  scrollToElement,
+} = require('../../libs/helpers')
 const timeDelay = 17_000_000
 const afterAllDelay = 4_000
 let typeDelay = { delay: 10}
@@ -60,8 +68,10 @@ describe('Previous And Next Buttons Autofilling Table', () => {
       await type(page, '#salary', user.salary, typeDelay)
       await type(page, '#department', user.department, typeDelay)
       await click(page, '#submit')
+      
       await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
     }
+
   }, timeDelay);
 
   it ('Changing the displayed rows to only 5', async () => { 
@@ -72,6 +82,7 @@ describe('Previous And Next Buttons Autofilling Table', () => {
     // Changin the displayed rows to 5: 
     await page.select(dropDownMenu, '5');
     await page.waitForTimeout(250)  // time needed to see next registration form after each iteration
+
   }, timeDelay)
 
   it ('Validating there is only 5 elements per table', async () => { 
@@ -86,6 +97,7 @@ describe('Previous And Next Buttons Autofilling Table', () => {
   }, timeDelay)
   
   it ('Moving forward into the new table pages, through all the table pages', async () => {
+
     // Get the total number of pages
     let totalPagesText = await getText(page, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.-pageInfo > span');
     let totalPages = parseInt(totalPagesText);
@@ -98,6 +110,7 @@ describe('Previous And Next Buttons Autofilling Table', () => {
       // Click the "Next" button
       await clickDelayed(page, nextButton);
     }
+
   }, timeDelay)
   
   it('Validating next button is disabled', async () => { 
@@ -120,6 +133,7 @@ describe('Previous And Next Buttons Autofilling Table', () => {
       await validatePageShown(page, i.toString());
       // Click the "Next" button
       await clickDelayed(page, previousButton);
+
     }
   }, timeDelay)
 

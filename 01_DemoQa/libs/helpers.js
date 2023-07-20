@@ -79,4 +79,30 @@ module.exports = {
       throw new Error(`Error clearing the input field: ${selector}`);
     }
   },
+
+  // Taking screenshot
+  screenshot: async function (page, filename) {
+    try {
+      // Take a screenshot and save it as 'filename.png'
+      await page.screenshot({ path: `${filename}.png` });
+    } catch (err) {
+      throw new Error(`Error taking screenshot: ${err}`);
+    }
+  },
+
+  // Creating scrollToElement helper
+  scrollToElement: async function (page, selector) {
+    try {
+      // Find the element
+      const element = await page.$(selector);
+
+      // Scroll to the element
+      await page.evaluate((el) => {
+        el.scrollIntoView();
+      }, element);
+    } catch (err) {
+      throw new Error(`Error scrolling to element: ${err} (try to use and ID)`);
+    }
+  }
+
 }

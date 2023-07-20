@@ -263,6 +263,8 @@
 <details>
 <summary><h4>Happy Path, testing all the web table</h4></summary>
 
+<h2>See video here</h2>
+
   **Test Objective:** Verify that the web table displays the correct data and that the user can interact with the table as expected.
 
   **Steps to Follow (Manual Testing):**
@@ -293,6 +295,8 @@
 
 <details>
 <summary><h4>Testing the Previous and Next button</h4></summary>
+
+<h2>see video here</h2>
 
 **Testing the Previous and Next button**
 
